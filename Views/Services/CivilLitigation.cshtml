@@ -1,0 +1,826 @@
+﻿@{
+    ViewData["Title"] = "Civil Litigation Services - Thwala Attorneys";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="bg-gradient-to-b from-slate-50 to-white text-gray-900">
+    <div class="relative overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80"
+             class="w-full h-[32rem] object-cover" alt="Civil Court and Legal Documents" />
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-cyan-600/90 flex items-center justify-center px-4">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-white text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fadeIn">
+                    Civil Litigation Services
+                </h1>
+                <p class="text-white/95 text-xl md:text-2xl font-light mb-8">
+                    Expert Legal Representation for Civil Disputes in South Africa
+                </p>
+                <div class="flex gap-4 justify-center flex-wrap">
+                    <a href="#overview" class="bg-yellow-500 text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-400 transition-all transform hover:scale-105 shadow-lg">
+                        Learn More
+                    </a>
+                    <a href="/Contact" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all">
+                        Get Legal Help
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 py-16 space-y-20">
+        <article id="overview" class="bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
+            <div class="flex items-center mb-8">
+                <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-2xl flex items-center justify-center mr-4">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
+                    </svg>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">Civil Litigation in South Africa</h2>
+            </div>
+            <p class="text-lg leading-relaxed text-gray-700">
+                Civil litigation involves legal disputes between individuals, businesses, or organizations where one party seeks monetary compensation
+                or specific performance from another party. Unlike criminal law, civil litigation deals with <strong class="text-blue-600">private disputes</strong>
+                rather than crimes against the state. Our experienced civil litigation team provides comprehensive legal representation
+                across all relevant South African courts, ensuring your rights are protected and your interests are vigorously pursued.
+            </p>
+        </article>
+
+        <article>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                Types of Civil Litigation Cases
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border border-blue-200 hover:shadow-xl transition-all group">
+                    <div class="flex items-start mb-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-handshake text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Contract Disputes</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Breach of contract, non-performance, and contractual interpretation disputes.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Breach of sale agreements</li>
+                        <li>• Service contract disputes</li>
+                        <li>• Employment contract issues</li>
+                        <li>• Construction contract disputes</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-2xl p-8 border border-cyan-200 hover:shadow-xl transition-all group">
+                    <div class="flex items-start mb-4">
+                        <div class="w-12 h-12 bg-cyan-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-home text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Property Disputes</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Real estate and property-related legal conflicts and ownership issues.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Boundary disputes</li>
+                        <li>• Eviction proceedings</li>
+                        <li>• Property transfer disputes</li>
+                        <li>• Landlord-tenant conflicts</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-teal-50 to-green-50 rounded-2xl p-8 border border-teal-200 hover:shadow-xl transition-all group">
+                    <div class="flex items-start mb-4">
+                        <div class="w-12 h-12 bg-teal-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-user-injured text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Personal Injury Claims</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Compensation claims for injuries caused by negligence or wrongful acts.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Motor vehicle accidents</li>
+                        <li>• Medical malpractice</li>
+                        <li>• Workplace injuries (often dealt with under COIDA, but civil claims can arise)</li>
+                        <li>• Public liability claims</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-200 hover:shadow-xl transition-all group">
+                    <div class="flex items-start mb-4">
+                        <div class="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-exclamation-triangle text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Delictual Claims</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Claims based on wrongful acts causing harm or damage to another person.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Defamation claims</li>
+                        <li>• Negligence actions</li>
+                        <li>• Privacy violations</li>
+                        <li>• Intentional harm cases</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-emerald-50 to-yellow-50 rounded-2xl p-8 border border-emerald-200 hover:shadow-xl transition-all group">
+                    <div class="flex items-start mb-4">
+                        <div class="w-12 h-12 bg-emerald-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-briefcase text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Commercial Disputes</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Business-related disputes and commercial litigation matters.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Partnership disputes</li>
+                        <li>• Shareholder conflicts</li>
+                        <li>• Debt collection</li>
+                        <li>• Trade disputes</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-8 border border-yellow-200 hover:shadow-xl transition-all group">
+                    <div class="flex items-start mb-4">
+                        <div class="w-12 h-12 bg-yellow-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-users text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Family Law Disputes</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Legal matters involving family relationships and domestic issues, primarily dealt with in the High Court for divorce and complex custody, but Magistrates' Courts handle maintenance and domestic violence.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Divorce proceedings (High Court)</li>
+                        <li>• Child custody and access disputes (High Court)</li>
+                        <li>• Maintenance claims (Magistrates' Court & High Court)</li>
+                        <li>• Domestic violence interdicts (Magistrates' Court)</li>
+                        <li>• Property settlements (High Court)</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-3xl shadow-xl overflow-hidden">
+            <div class="bg-gradient-to-r from-blue-600 to-cyan-600 p-10">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-center">Civil Litigation Process</h2>
+                <p class="text-white/90 text-center mt-4 text-lg">Understanding the steps from dispute to resolution</p>
+            </div>
+            <div class="p-8 md:p-12">
+                <div class="space-y-8">
+                    <div class="flex items-start group">
+                        <div class="flex-shrink-0 w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform shadow-lg">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="ml-6 flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">1. Initial Consultation & Case Assessment</h3>
+                            <p class="text-gray-700">Evaluate the merits of your case, assess potential claims and defenses, and advise on the best legal strategy.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start group">
+                        <div class="flex-shrink-0 w-16 h-16 bg-cyan-600 text-white rounded-full flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform shadow-lg">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="ml-6 flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">2. Investigation & Evidence Gathering</h3>
+                            <p class="text-gray-700">Collect relevant documents, interview witnesses, and gather all necessary evidence to support your case.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start group">
+                        <div class="flex-shrink-0 w-16 h-16 bg-teal-600 text-white rounded-full flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform shadow-lg">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="ml-6 flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">3. Pre-Litigation Negotiations</h3>
+                            <p class="text-gray-700">Attempt to resolve the dispute through negotiation, mediation, or alternative dispute resolution methods.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start group">
+                        <div class="flex-shrink-0 w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform shadow-lg">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="ml-6 flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">4. Issuing and Serving Court Process</h3>
+                            <p class="text-gray-700">Prepare and file the necessary court documents (e.g., summons or notice of motion) and ensure they are properly served on the opposing party.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start group">
+                        <div class="flex-shrink-0 w-16 h-16 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform shadow-lg">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <div class="ml-6 flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">5. Exchange of Pleadings & Discovery</h3>
+                            <p class="text-gray-700">Formal exchange of legal documents outlining each party's claims and defenses, followed by the discovery of relevant documents and evidence.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start group">
+                        <div class="flex-shrink-0 w-16 h-16 bg-yellow-600 text-white rounded-full flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform shadow-lg">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <div class="ml-6 flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">6. Trial & Judgment</h3>
+                            <p class="text-gray-700">Present your case in court, examine witnesses, and argue legal points before the judge for final judgment.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start group">
+                        <div class="flex-shrink-0 w-16 h-16 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform shadow-lg">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="ml-6 flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">7. Enforcement & Collection</h3>
+                            <p class="text-gray-700">Enforce court judgments and collect awarded damages through various legal mechanisms available.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                South African Court System for Civil Matters
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all">
+                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-balance-scale text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center mb-4">Magistrates' Courts</h3>
+                    <p class="text-gray-700 text-center mb-4">Comprising District and Regional Courts, they handle civil matters up to specific monetary limits and certain specific matters by statute.</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-600 mr-2"></i>
+                            Debt collection (District: up to R200,000; Regional: up to R400,000)
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-600 mr-2"></i>
+                            Small claims disputes (Small Claims Court, a division of Magistrates' Court)
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-600 mr-2"></i>
+                            Eviction proceedings
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-600 mr-2"></i>
+                            Maintenance and Domestic Violence matters
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all">
+                    <div class="w-20 h-20 bg-cyan-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-university text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center mb-4">High Courts</h3>
+                    <p class="text-gray-700 text-center mb-4">Possess inherent jurisdiction, handling complex civil matters typically exceeding Magistrates' Court limits, and specialized issues.</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-cyan-600 mr-2"></i>
+                            Complex commercial disputes
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-cyan-600 mr-2"></i>
+                            Constitutional matters (first instance)
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-cyan-600 mr-2"></i>
+                            Judicial review of administrative action
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-cyan-600 mr-2"></i>
+                            Divorce and major family law disputes
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-cyan-600 mr-2"></i>
+                            Appeals from Magistrates' Courts
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all">
+                    <div class="w-20 h-20 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-crown text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-center mb-4">Supreme Court of Appeal & Constitutional Court</h3>
+                    <p class="text-gray-700 text-center mb-4">The Supreme Court of Appeal is the highest court for non-constitutional civil appeals. The Constitutional Court is the highest court in all matters.</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-teal-600 mr-2"></i>
+                            SCA: Final court of appeal for non-constitutional matters
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-teal-600 mr-2"></i>
+                            Constitutional Court: Highest court in all constitutional matters and final appeal in others by leave
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-teal-600 mr-2"></i>
+                            Sets legal precedents for lower courts
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-teal-600 mr-2"></i>
+                            Ensures consistency in legal interpretation
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                Civil Remedies and Relief
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition-all group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-coins text-white text-2xl"></i>
+                    </div>
+                    <h5 class="font-bold text-xl mb-3">Monetary Damages</h5>
+                    <p class="text-gray-700 text-sm">Financial compensation for losses, including actual damages, consequential damages, and interest.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition-all group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-ban text-white text-2xl"></i>
+                    </div>
+                    <h5 class="font-bold text-xl mb-3">Interdicts (Injunctions)</h5>
+                    <p class="text-gray-700 text-sm">Court orders preventing or compelling specific actions, including temporary and final interdicts.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition-all group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-handshake text-white text-2xl"></i>
+                    </div>
+                    <h5 class="font-bold text-xl mb-3">Specific Performance</h5>
+                    <p class="text-gray-700 text-sm">Court orders requiring parties to fulfill their contractual obligations or specific duties.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:shadow-xl transition-all group">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-file-contract text-white text-2xl"></i>
+                    </div>
+                    <h5 class="font-bold text-xl mb-3">Declaratory Orders</h5>
+                    <p class="text-gray-700 text-sm">Court declarations clarifying legal rights, obligations, or the interpretation of contracts or statutes.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-3xl p-8 md:p-12 border border-blue-200">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Alternative Dispute Resolution (ADR)</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-comments text-blue-600 text-2xl mr-3"></i>
+                        <h3 class="font-bold text-xl">Mediation</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">A neutral third party facilitates negotiations between disputing parties to reach a mutually acceptable settlement.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Cost-effective solution</li>
+                        <li>• Confidential process</li>
+                        <li>• Preserves relationships</li>
+                        <li>• Generally faster than litigation</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-gavel text-cyan-600 text-2xl mr-3"></i>
+                        <h3 class="font-bold text-xl">Arbitration</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">A private, impartial third party (arbitrator) makes a binding decision after hearing evidence and arguments from both parties, often specified by contract.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Binding decisions</li>
+                        <li>• Expert arbitrators</li>
+                        <li>• Private proceedings</li>
+                        <li>• Limited appeal rights (compared to court judgments)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-handshake text-teal-600 text-2xl mr-3"></i>
+                        <h3 class="font-bold text-xl">Negotiation</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">Direct discussions between parties or their legal representatives to reach a settlement without formal third-party intervention.</p>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li>• Complete party control</li>
+                        <li>• Flexible and custom solutions</li>
+                        <li>• No formal procedures</li>
+                        <li>• Most cost-effective (if successful)</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                Litigation Costs and Timelines
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border border-blue-200 hover:shadow-xl transition-all">
+                    <div class="flex items-center mb-6">
+                        <svg class="w-10 h-10 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <h3 class="text-2xl font-bold text-gray-900">Legal Costs</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-white/70 rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-900 mb-2">Attorney Fees</h4>
+                            <p class="text-sm text-gray-700">Professional fees for legal services, usually charged hourly or on a contingency fee basis (where legally permissible and agreed).</p>
+                        </div>
+                        <div class="bg-white/70 rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-900 mb-2">Disbursements & Court Fees</h4>
+                            <p class="text-sm text-gray-700">Out-of-pocket expenses including official court filing fees, sheriff's fees for service of documents, and other administrative costs.</p>
+                        </div>
+                        <div class="bg-white/70 rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-900 mb-2">Advocate's Fees / Counsel Fees</h4>
+                            <p class="text-sm text-gray-700">Fees for specialist legal counsel (advocates) when their expertise is required for appearances or opinions.</p>
+                        </div>
+                        <div class="bg-white/70 rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-900 mb-2">Expert Witness Costs</h4>
+                            <p class="text-sm text-gray-700">Fees for professional witnesses and technical experts when their testimony or reports are required to support your case.</p>
+                        </div>
+                        <div class="bg-white/70 rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-900 mb-2">Cost Orders</h4>
+                            <p class="text-sm text-gray-700">The court may order the unsuccessful party to pay a portion of the successful party's legal costs (typically 'party-and-party' costs, rarely 'attorney-and-client' costs unless egregious conduct).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-2xl p-8 border border-cyan-200 hover:shadow-xl transition-all">
+                    <div class="flex items-center mb-6">
+                        <svg class="w-10 h-10 text-cyan-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <h3 class="text-2xl font-bold text-gray-900">Typical Timelines</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-white/70 rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-900 mb-2">Simple Matters (Magistrates' Court)</h4>
+                            <p class="text-sm text-gray-700">Typically 6-12 months for straightforward debt collection or less complex contract disputes.</p>
+                        </div>
+                        <div class="bg-white/70 rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-900 mb-2">Complex Matters (High Court)</h4>
+                            <p class="text-sm text-gray-700">Can range from 1 to 3 years or more for complex commercial disputes, multi-party litigation, or significant personal injury claims.</p>
+                        </div>
+                        <div class="bg-white/70 rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-900 mb-2">Appeal Processes</h4>
+                            <p class="text-sm text-gray-700">An appeal to a higher court can add an additional 6-18 months, depending on the court and caseload.</p>
+                        </div>
+                        <div class="bg-white/70 rounded-xl p-4">
+                            <h4 class="font-semibold text-gray-900 mb-2">Urgent Applications</h4>
+                            <p class="text-sm text-gray-700">Urgent interdicts and immediate relief applications can be heard in days to weeks, depending on the urgency and court roll.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                South African Civil Law Framework
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border border-blue-200 hover:shadow-xl transition-all group">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">The Constitution of the Republic of South Africa</h3>
+                            <p class="text-gray-700">The supreme law of the Republic, providing the foundation for all civil rights, principles of justice, and procedural fairness.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-2xl p-8 border border-cyan-200 hover:shadow-xl transition-all group">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-cyan-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Court Rules & Statutes</h3>
+                            <p class="text-gray-700">Legislation like the Superior Courts Act, Magistrates' Courts Act, and their respective Uniform Rules govern civil procedure.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-teal-50 to-green-50 rounded-2xl p-8 border border-teal-200 hover:shadow-xl transition-all group">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-teal-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Common Law (Roman-Dutch Law)</h3>
+                            <p class="text-gray-700">The historical foundation of South African law, governing principles of contracts, delict (torts), property, and unjustified enrichment.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-200 hover:shadow-xl transition-all group">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Specific Legislation</h3>
+                            <p class="text-gray-700">Numerous Acts regulate specific areas, such as the Consumer Protection Act, National Credit Act, and Competition Act.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
+            <div class="flex items-center justify-center mb-12">
+                <svg class="w-10 h-10 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">Frequently Asked Questions</h2>
+            </div>
+            <div id="faq" class="space-y-4 max-w-4xl mx-auto">
+                <div class="border border-blue-200 rounded-2xl overflow-hidden hover:shadow-lg transition-all">
+                    <button type="button"
+                            aria-expanded="false"
+                            aria-controls="faq1"
+                            class="w-full text-left px-6 py-5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400 flex justify-between items-center hover:from-blue-700 hover:to-cyan-700 transition-all"
+                            onclick="toggleFAQ(event)">
+                        <span class="pr-4">How long does civil litigation typically take in South Africa?</span>
+                        <span class="transform transition-transform duration-300 text-2xl">▼</span>
+                    </button>
+                    <div id="faq1" class="px-6 py-5 hidden bg-gradient-to-br from-blue-50 to-cyan-50 text-gray-800">
+                        Civil litigation duration varies significantly depending on case complexity and the specific court. Simple debt collection matters in the Magistrates' Courts may resolve in 6-12 months, while complex commercial disputes in the High Court can take 1-3 years or even longer, especially if appeals are pursued. Factors affecting timeline include court availability, case complexity, number of parties involved, and willingness to settle.
+                    </div>
+                </div>
+
+                <div class="border border-blue-200 rounded-2xl overflow-hidden hover:shadow-lg transition-all">
+                    <button type="button"
+                            aria-expanded="false"
+                            aria-controls="faq2"
+                            class="w-full text-left px-6 py-5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400 flex justify-between items-center hover:from-blue-700 hover:to-cyan-700 transition-all"
+                            onclick="toggleFAQ(event)">
+                        <span class="pr-4">What are the costs involved in civil litigation in South Africa?</span>
+                        <span class="transform transition-transform duration-300 text-2xl">▼</span>
+                    </button>
+                    <div id="faq2" class="px-6 py-5 hidden bg-gradient-to-br from-blue-50 to-cyan-50 text-gray-800">
+                        Litigation costs typically include attorney fees, advocate's fees (if counsel is briefed), court fees, sheriff's fees, and expert witness costs. While the unsuccessful party may be ordered to pay a portion of the successful party's legal costs (known as 'party-and-party' costs), it is rare for a successful party to recover 100% of their actual costs. We provide transparent fee estimates and discuss payment arrangements, including contingency fee options where appropriate and legally permitted.
+                    </div>
+                </div>
+
+                <div class="border border-blue-200 rounded-2xl overflow-hidden hover:shadow-lg transition-all">
+                    <button type="button"
+                            aria-expanded="false"
+                            aria-controls="faq3"
+                            class="w-full text-left px-6 py-5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400 flex justify-between items-center hover:from-blue-700 hover:to-cyan-700 transition-all"
+                            onclick="toggleFAQ(event)">
+                        <span class="pr-4">Should I try to settle out of court in South Africa?</span>
+                        <span class="transform transition-transform duration-300 text-2xl">▼</span>
+                    </button>
+                    <div id="faq3" class="px-6 py-5 hidden bg-gradient-to-br from-blue-50 to-cyan-50 text-gray-800">
+                        Settlement is often advisable as it tends to be faster, less expensive, and provides parties with more control over the outcome compared to a court judgment. We always explore settlement opportunities through negotiation, mediation, or arbitration before proceeding to trial. However, some cases require court intervention to protect your rights or achieve a just outcome effectively.
+                    </div>
+                </div>
+
+                <div class="border border-blue-200 rounded-2xl overflow-hidden hover:shadow-lg transition-all">
+                    <button type="button"
+                            aria-expanded="false"
+                            aria-controls="faq4"
+                            class="w-full text-left px-6 py-5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400 flex justify-between items-center hover:from-blue-700 hover:to-cyan-700 transition-all"
+                            onclick="toggleFAQ(event)">
+                        <span class="pr-4">Which South African court will hear my civil case?</span>
+                        <span class="transform transition-transform duration-300 text-2xl">▼</span>
+                    </button>
+                    <div id="faq4" class="px-6 py-5 hidden bg-gradient-to-br from-blue-50 to-cyan-50 text-gray-800">
+                        The jurisdiction of the court depends on the monetary value of the claim and the type of case. District Magistrates' Courts handle matters up to R200,000, while Regional Magistrates' Courts handle claims up to R400,000. High Courts deal with matters above R400,000 and have inherent jurisdiction over all civil matters, including complex commercial disputes, constitutional issues, and divorce cases. Specialized courts also exist for specific legal areas.
+                    </div>
+                </div>
+
+                <div class="border border-blue-200 rounded-2xl overflow-hidden hover:shadow-lg transition-all">
+                    <button type="button"
+                            aria-expanded="false"
+                            aria-controls="faq5"
+                            class="w-full text-left px-6 py-5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold focus:outline-none focus:ring-2 focus:ring-blue-400 flex justify-between items-center hover:from-blue-700 hover:to-cyan-700 transition-all"
+                            onclick="toggleFAQ(event)">
+                        <span class="pr-4">Can I recover my legal costs if I win my civil case in South Africa?</span>
+                        <span class="transform transition-transform duration-300 text-2xl">▼</span>
+                    </button>
+                    <div id="faq5" class="px-6 py-5 hidden bg-gradient-to-br from-blue-50 to-cyan-50 text-gray-800">
+                        In South African civil litigation, the general rule is that costs follow the event, meaning the successful party is usually awarded their costs by the court. However, courts have discretion in granting cost orders. These costs are typically on a 'party-and-party' scale, which means you recover only a portion of your actual legal expenses, not usually 100%. 'Attorney-and-client' costs, which are closer to actual costs, are awarded only in specific circumstances, such as abusive litigation.
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-3xl p-8 md:p-12 border border-blue-200">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">When to Seek Legal Assistance</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">Immediate Legal Help Required</h3>
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow">
+                            <div class="flex items-start">
+                                <i class="fas fa-exclamation-triangle text-red-600 mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Urgent Court Applications</h4>
+                                    <p class="text-sm text-gray-700">When you need immediate court intervention to prevent irreparable harm or protect your rights.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow">
+                            <div class="flex items-start">
+                                <i class="fas fa-ban text-red-600 mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Interdict Applications</h4>
+                                    <p class="text-sm text-gray-700">To compel someone to act or stop continuing harmful or unlawful conduct.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow">
+                            <div class="flex items-start">
+                                <i class="fas fa-home text-red-600 mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Eviction Proceedings</h4>
+                                    <p class="text-sm text-gray-700">Whether you are facing eviction or need to legally evict someone from your property.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-cyan-600 mb-4">Strategic Legal Planning</h3>
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow">
+                            <div class="flex items-start">
+                                <i class="fas fa-handshake text-blue-600 mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Contract Disputes</h4>
+                                    <p class="text-sm text-gray-700">When agreements are breached, terms are disputed, or you need to enforce contractual obligations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow">
+                            <div class="flex items-start">
+                                <i class="fas fa-coins text-blue-600 mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Debt Recovery</h4>
+                                    <p class="text-sm text-gray-700">For collecting outstanding debts or defending against unwarranted claims.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-shadow">
+                            <div class="flex items-start">
+                                <i class="fas fa-user-injured text-blue-600 mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Personal Injury Claims</h4>
+                                    <p class="text-sm text-gray-700">Seeking compensation for injuries or damages caused by the negligence or wrongful acts of another.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-blue-100 border-l-4 border-blue-600 p-6 rounded-r-lg">
+                <h4 class="font-bold text-xl mb-3 flex items-center">
+                    <i class="fas fa-lightbulb text-blue-600 mr-3"></i>
+                    Early Legal Intervention Benefits
+                </h4>
+                <p class="text-gray-700">
+                    Seeking legal advice early can prevent disputes from escalating, preserve important evidence, ensure statutory deadlines
+                    are met, and often lead to more cost-effective resolutions. Don't wait until a dispute becomes a crisis – proactive legal guidance is key.
+                </p>
+            </div>
+        </article>
+
+        <article class="bg-gradient-to-r from-blue-600 to-cyan-600 rounded-3xl p-12 text-center shadow-xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Expert Civil Litigation Representation</h2>
+            <p class="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+                Our experienced civil litigation team provides strategic legal representation across all South African courts.
+                We fight vigorously to protect your interests and achieve the best possible outcomes for your case.
+            </p>
+            <div class="grid sm:grid-cols-2 gap-4 mb-8 max-w-2xl mx-auto">
+                <div class="flex items-center justify-center text-white">
+                    <i class="fas fa-check-circle text-yellow-400 mr-3 text-xl"></i>
+                    <span>Experienced Litigation Lawyers</span>
+                </div>
+                <div class="flex items-center justify-center text-white">
+                    <i class="fas fa-check-circle text-yellow-400 mr-3 text-xl"></i>
+                    <span>Representation Across All Court Levels</span>
+                </div>
+                <div class="flex items-center justify-center text-white">
+                    <i class="fas fa-check-circle text-yellow-400 mr-3 text-xl"></i>
+                    <span>Alternative Dispute Resolution Expertise</span>
+                </div>
+                <div class="flex items-center justify-center text-white">
+                    <i class="fas fa-check-circle text-yellow-400 mr-3 text-xl"></i>
+                    <span>Transparent Fee Structures</span>
+                </div>
+            </div>
+            <div class="flex gap-4 justify-center flex-wrap">
+                <a asp-controller="ContactUs" asp-action="Index" class="inline-block bg-yellow-500 text-gray-900 text-lg font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                    <i class="fas fa-phone mr-2"></i>Contact Our Legal Experts Today
+                </a>
+                <a href="tel:+27106150136" class="inline-block border-2 border-white text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-white hover:text-blue-600 transition-all">
+                    Call Us Now
+                </a>
+            </div>
+        </article>
+    </div>
+</section>
+
+<style>
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fadeIn {
+        animation: fadeIn 0.8s ease-out;
+    }
+</style>
+
+@section Scripts {
+    <script>
+        function toggleFAQ(event) {
+            const btn = event.currentTarget;
+            const contentId = btn.getAttribute('aria-controls');
+            const content = document.getElementById(contentId);
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+            btn.setAttribute('aria-expanded', !isExpanded);
+            content.classList.toggle('hidden');
+
+            const arrow = btn.querySelector('span:last-child');
+            arrow.style.transform = !isExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading animation for resource links
+        document.querySelectorAll('.group a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (this.getAttribute('href') === '#') {
+                    e.preventDefault();
+                    const originalText = this.innerHTML;
+                    this.innerHTML = 'Loading...';
+                    setTimeout(() => {
+                        this.innerHTML = originalText;
+                        alert('This resource will be available soon. Please contact us for more information.');
+                    }, 1000);
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all articles for animation
+        document.querySelectorAll('article').forEach(article => {
+            observer.observe(article);
+        });
+    </script>
+}

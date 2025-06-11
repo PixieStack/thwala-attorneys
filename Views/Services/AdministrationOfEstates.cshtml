@@ -1,0 +1,452 @@
+﻿@{
+    ViewData["Title"] = "Administration of Deceased Estates";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="bg-gradient-to-b from-slate-50 to-white text-gray-900 min-h-screen">
+    <div class="relative overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1600&q=80"
+             class="w-full h-[32rem] object-cover" alt="Legal Library" />
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-indigo-600/90 flex items-center justify-center px-4">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-white text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fadeIn">
+                    Administration of Deceased Estates in South Africa
+                </h1>
+                <p class="text-white/95 text-xl md:text-2xl font-light mb-8">
+                    Professional Estate Administration Services for Peace of Mind
+                </p>
+                <div class="flex gap-4 justify-center flex-wrap">
+                    <a href="#overview" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg">
+                        Learn More
+                    </a>
+                    <a href="/Contact" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 py-16 space-y-20">
+        <article id="overview" class="bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
+            <div class="flex items-center mb-8">
+                <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center mr-4">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Overview of Deceased Estates</h2>
+            </div>
+            <p class="text-lg leading-relaxed text-gray-700">
+                In South Africa, the passing of a loved one necessitates a formal legal process known as the <strong class="text-blue-600">Administration of Deceased Estates</strong>. This process is primarily governed by the <em class="text-indigo-600">Administration of Estates Act 66 of 1965</em>. Its purpose is to ensure that a deceased person's assets are properly collected, debts and taxes settled, and remaining property distributed to their rightful heirs or beneficiaries, either according to their last valid will or, in its absence, the laws of intestate succession.
+            </p>
+            <p class="text-lg leading-relaxed text-gray-700 mt-4">
+                The Master of the High Court plays a crucial oversight role, ensuring the process is conducted lawfully and transparently. Proper estate administration is vital to prevent disputes among heirs and to ensure the deceased's final wishes are honoured.
+            </p>
+        </article>
+
+        <article>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Key Legal Framework</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-200 hover:shadow-xl transition-all group">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Administration of Estates Act 66 of 1965</h3>
+                            <p class="text-gray-700">This is the cornerstone legislation governing the entire process of estate administration, including the reporting of deaths, appointment of executors, and the winding up of estates under the supervision of the Master of the High Court.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 border border-indigo-200 hover:shadow-xl transition-all group">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Intestate Succession Act 81 of 1987</h3>
+                            <p class="text-gray-700">This Act dictates how a deceased person's assets will be distributed if they pass away without leaving a valid will (intestate). It prescribes a specific order of beneficiaries, primarily the surviving spouse and descendants.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-200 hover:shadow-xl transition-all group">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Wills Act 7 of 1953</h3>
+                            <p class="text-gray-700">This Act sets out the formal requirements for a will to be considered legally valid in South Africa. Compliance with this Act is crucial for a will to be given effect by the Master of the High Court.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl p-8 border border-amber-200 hover:shadow-xl transition-all group">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 bg-amber-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Estate Duty Act 45 of 1955</h3>
+                            <p class="text-gray-700">This Act governs the imposition and collection of estate duty (a form of death tax) on the net value of a deceased estate that exceeds a certain threshold. It is administered by the South African Revenue Service (SARS).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-3xl shadow-xl overflow-hidden">
+            <div class="bg-gradient-to-r from-blue-600 to-indigo-600 p-10">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-center">Detailed Step-by-Step Process</h2>
+            </div>
+            <div class="p-8 md:p-12">
+                <div class="space-y-6">
+                    <div class="flex items-start group">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg group-hover:scale-110 transition-transform">1</div>
+                        <div class="ml-6 flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Report the Death and Estate to the Master of the High Court</h3>
+                            <p class="text-gray-700">This initial step involves reporting the death to the Master's Office in the jurisdiction where the deceased was ordinarily resident. Required documents typically include the official death certificate, the deceased's original will (if any), marriage certificates (if applicable), identity documents of the deceased and nominated executor, and completed statutory forms such as the Death Notice (Form J294) and Inventory (Form J243) of all assets and liabilities. For intestate estates, a next of kin affidavit (Form J192) is also required.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start group">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg group-hover:scale-110 transition-transform">2</div>
+                        <div class="ml-6 flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Executor Appointment</h3>
+                            <p class="text-gray-700">Once the estate is reported, the Master will appoint an executor. If a valid will exists, the person nominated in the will (executor testamentary) is typically appointed. If there is no will, or the nominated executor is unable to act, the Master will appoint an executor dative. The executor then receives Letters of Executorship, which are the official document authorising them to administer the estate.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start group">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg group-hover:scale-110 transition-transform">3</div>
+                        <div class="ml-6 flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Place Notices to Creditors</h3>
+                            <p class="text-gray-700">The executor is legally required to publish a notice in the Government Gazette and a local newspaper (using Form J187) calling on all creditors and debtors of the estate to submit their claims or pay their debts to the estate within a period of 30 days. This period allows all outstanding financial matters to be identified.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start group">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg group-hover:scale-110 transition-transform">4</div>
+                        <div class="ml-6 flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Collect and Safeguard Estate Assets</h3>
+                            <p class="text-gray-700">The executor's duty involves identifying, collecting, and taking control of all assets belonging to the deceased. This includes movable property (e.g., vehicles, furniture, investments), immovable property (e.g., houses, land), bank accounts, and any outstanding debts owed to the deceased. An estate bank account is usually opened to manage the estate's funds.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start group">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg group-hover:scale-110 transition-transform">5</div>
+                        <div class="ml-6 flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Pay Debts and Taxes</h3>
+                            <p class="text-gray-700">After receiving claims from creditors and ascertaining all liabilities, the executor is responsible for settling all legitimate debts of the deceased. This includes funeral expenses, outstanding loans, utility bills, and any income tax or estate duty payable to the South African Revenue Service (SARS) before any assets can be distributed to heirs.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start group">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg group-hover:scale-110 transition-transform">6</div>
+                        <div class="ml-6 flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Prepare and Submit Liquidation and Distribution Account (L&D Account)</h3>
+                            <p class="text-gray-700">For estates with a gross value exceeding R250,000, a detailed Liquidation and Distribution Account must be prepared. This account provides a comprehensive summary of all assets, liabilities, administration costs, and the proposed plan for distributing the remaining assets. The L&D Account is submitted to the Master for examination and approval. Once approved, it must lie open for inspection at the Master's Office and the local Magistrate's Court for 21 days for any objections.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start group">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg group-hover:scale-110 transition-transform">7</div>
+                        <div class="ml-6 flex-1">
+                            <h3 class="font-bold text-xl text-gray-900 mb-2">Distribute Remaining Assets and Finalise</h3>
+                            <p class="text-gray-700">After the L&D Account has been approved by the Master and no valid objections have been raised during the inspection period, the executor can proceed with the final distribution of assets. This involves transferring property, funds, and other assets to the legitimate heirs or beneficiaries as stipulated in the will or by the Intestate Succession Act. Once distribution is complete, the executor submits final proof to the Master to obtain a discharge, formally concluding the administration process.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <article class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-200 hover:shadow-xl transition-all">
+                <div class="flex items-center mb-6">
+                    <svg class="w-10 h-10 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <h2 class="text-2xl font-bold text-gray-900">Typical Timeline</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-white/60 rounded-xl p-4">
+                        <h4 class="font-semibold text-gray-900 mb-2">Overall Duration</h4>
+                        <p class="text-gray-700">The administration process typically takes between <span class="font-bold">6 to 18 months</span> from reporting the death to the Master of the High Court.</p>
+                    </div>
+                    <div class="bg-white/60 rounded-xl p-4">
+                        <h4 class="font-semibold text-gray-900 mb-2">Simple Estates</h4>
+                        <p class="text-gray-700">Smaller estates (currently with a gross value under R250,000, administered under Section 18(3) of the Act) may be finalized in under 6 months due to a simplified process.</p>
+                    </div>
+                    <div class="bg-white/60 rounded-xl p-4">
+                        <h4 class="font-semibold text-gray-900 mb-2">Complex Estates</h4>
+                        <p class="text-gray-700">Estates involving immovable property transfers, business interests, significant debts, tax complexities, international assets, or family disputes can take 18 months or significantly longer to resolve.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl p-8 border border-amber-200 hover:shadow-xl transition-all">
+                <div class="flex items-center mb-6">
+                    <svg class="w-10 h-10 text-amber-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <h2 class="text-2xl font-bold text-gray-900">Executor Fees</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-white/60 rounded-xl p-4">
+                        <h4 class="font-semibold text-gray-900 mb-2">Asset Commission</h4>
+                        <p class="text-gray-700">The executor is entitled to a commission of <span class="font-bold text-amber-600">3.5% of the gross value of the estate assets</span> (excluding VAT, which is added on top). This fee is prescribed by regulation under the Administration of Estates Act.</p>
+                    </div>
+                    <div class="bg-white/60 rounded-xl p-4">
+                        <h4 class="font-semibold text-gray-900 mb-2">Income Commission</h4>
+                        <p class="text-gray-700">In addition to the asset commission, the executor may charge <span class="font-bold text-amber-600">6% on any income</span> (such as rental income, interest, or dividends) that accrues to the estate after the deceased's date of death (excluding VAT).</p>
+                    </div>
+                    <div class="bg-white/60 rounded-xl p-4">
+                        <h4 class="font-semibold text-gray-900 mb-2">Negotiation and Waiver</h4>
+                        <p class="text-gray-700">While these are statutory maximums, fees can be negotiated downwards with the Master's approval, particularly if a professional executor is appointed. If a family member acts as executor, they often choose to waive their fees, though this must still be accounted for in the L&D Account.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <article class="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-8 md:p-12 border border-red-200">
+            <div class="flex items-center mb-8">
+                <svg class="w-10 h-10 text-red-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+                <h2 class="text-3xl font-bold text-gray-900">Common Challenges & Considerations</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-white/70 rounded-xl p-4 flex items-start">
+                    <svg class="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <p class="text-gray-700">Absence of a valid will (intestate succession complexities lead to distribution by law, not choice).</p>
+                </div>
+                <div class="bg-white/70 rounded-xl p-4 flex items-start">
+                    <svg class="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <p class="text-gray-700">Disputes among heirs and beneficiaries regarding the will or distribution.</p>
+                </div>
+                <div class="bg-white/70 rounded-xl p-4 flex items-start">
+                    <svg class="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <p class="text-gray-700">Dealing with minor or incapacitated heirs, often requiring the establishment of a testamentary trust.</p>
+                </div>
+                <div class="bg-white/70 rounded-xl p-4 flex items-start">
+                    <svg class="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <p class="text-gray-700">Managing foreign assets or cross-border estate issues, requiring adherence to international laws.</p>
+                </div>
+                <div class="bg-white/70 rounded-xl p-4 flex items-start md:col-span-2">
+                    <svg class="w-5 h-5 text-red-600 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    <p class="text-gray-700">Estate insolvency, where liabilities exceed assets, requiring a different legal process.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100">
+            <div class="flex items-center justify-center mb-12">
+                <svg class="w-10 h-10 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h2 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Frequently Asked Questions</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="border border-blue-200 rounded-xl overflow-hidden">
+                    <button class="w-full text-left p-6 bg-blue-50 hover:bg-blue-100 transition-colors duration-200 flex justify-between items-center"
+                            aria-expanded="false" aria-controls="faq-estate-content-1" onclick="toggleFAQ(event)">
+                        <span class="font-semibold text-lg text-gray-900">What happens if the deceased had no valid will?</span>
+                        <span class="transform transition-transform duration-200 text-blue-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div id="faq-estate-content-1" class="hidden p-6 bg-white text-gray-700 border-t border-blue-100">
+                        <p>If a person dies without a valid will (intestate), their estate will be distributed according to the Intestate Succession Act 81 of 1987. This Act prescribes a specific order of inheritance, typically favouring the surviving spouse and descendants, and then other blood relatives in a defined sequence.</p>
+                    </div>
+                </div>
+
+                <div class="border border-blue-200 rounded-xl overflow-hidden">
+                    <button class="w-full text-left p-6 bg-blue-50 hover:bg-blue-100 transition-colors duration-200 flex justify-between items-center"
+                            aria-expanded="false" aria-controls="faq-estate-content-2" onclick="toggleFAQ(event)">
+                        <span class="font-semibold text-lg text-gray-900">How is an executor appointed?</span>
+                        <span class="transform transition-transform duration-200 text-blue-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div id="faq-estate-content-2" class="hidden p-6 bg-white text-gray-700 border-t border-blue-100">
+                        <p>If there is a valid will, the person nominated in the will (executor testamentary) is usually appointed by the Master of the High Court. If no valid will exists, or the nominated executor is unable to act, the Master will appoint an executor dative. This is often a family member or a professional, who then receives Letters of Executorship.</p>
+                    </div>
+                </div>
+
+                <div class="border border-blue-200 rounded-xl overflow-hidden">
+                    <button class="w-full text-left p-6 bg-blue-50 hover:bg-blue-100 transition-colors duration-200 flex justify-between items-center"
+                            aria-expanded="false" aria-controls="faq-estate-content-3" onclick="toggleFAQ(event)">
+                        <span class="font-semibold text-lg text-gray-900">Can an executor be a family member?</span>
+                        <span class="transform transition-transform duration-200 text-blue-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div id="faq-estate-content-3" class="hidden p-6 bg-white text-gray-700 border-t border-blue-100">
+                        <p>Yes, executors are very often family members or close associates of the deceased. The Master must approve their appointment. While a family member can act as executor, it's advisable for them to seek professional legal assistance due to the complexities involved in estate administration, especially if the estate is substantial.</p>
+                    </div>
+                </div>
+
+                <div class="border border-blue-200 rounded-xl overflow-hidden">
+                    <button class="w-full text-left p-6 bg-blue-50 hover:bg-blue-100 transition-colors duration-200 flex justify-between items-center"
+                            aria-expanded="false" aria-controls="faq-estate-content-4" onclick="toggleFAQ(event)">
+                        <span class="font-semibold text-lg text-gray-900">What documents are needed to start estate administration?</span>
+                        <span class="transform transition-transform duration-200 text-blue-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div id="faq-estate-content-4" class="hidden p-6 bg-white text-gray-700 border-t border-blue-100">
+                        <p>Essential documents include the original death certificate, the deceased's last will (if any), ID documents of the deceased and the reporting person, marriage certificates (if applicable), and completed statutory forms such as the Death Notice (J294), Inventory (J243), and potentially an Affidavit of Next of Kin (J192) for intestate estates.</p>
+                    </div>
+                </div>
+
+                <div class="border border-blue-200 rounded-xl overflow-hidden">
+                    <button class="w-full text-left p-6 bg-blue-50 hover:bg-blue-100 transition-colors duration-200 flex justify-between items-center"
+                            aria-expanded="false" aria-controls="faq-estate-content-5" onclick="toggleFAQ(event)">
+                        <span class="font-semibold text-lg text-gray-900">How long does the estate administration process take?</span>
+                        <span class="transform transition-transform duration-200 text-blue-600">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                    <div id="faq-estate-content-5" class="hidden p-6 bg-white text-gray-700 border-t border-blue-100">
+                        <p>The timeline varies based on the estate's complexity. Simple estates (e.g., those under R250,000, which follow a simplified process) can be finalized in 3 to 6 months. Larger or more complex estates involving property sales, businesses, disputes, or foreign assets typically take 12 to 18 months, or even longer.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl p-12 text-center shadow-xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Need Expert Assistance with Estate Administration?</h2>
+            <p class="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+                Navigating the complexities of deceased estates can be challenging. Our experienced legal team specializes in estate administration and can guide you through every step of the process, ensuring compliance with South African law and providing peace of mind during a difficult time.
+            </p>
+            <div class="flex gap-4 justify-center flex-wrap">
+                <a asp-controller="ContactUs" asp-action="Index" class="inline-block bg-white text-blue-600 text-lg font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                    Contact Our Legal Experts Today
+                </a>
+                <a href="tel:+27106150136" class="inline-block border-2 border-white text-white text-lg font-semibold px-8 py-4 rounded-full hover:bg-white hover:text-blue-600 transition-all">
+                    Call Us Now
+                </a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<style>
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fadeIn {
+        animation: fadeIn 0.8s ease-out;
+    }
+</style>
+
+@section Scripts {
+    <script>
+        // Function to toggle FAQ content visibility
+        function toggleFAQ(event) {
+            const btn = event.currentTarget;
+            const contentId = btn.getAttribute('aria-controls');
+            const content = document.getElementById(contentId);
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+            btn.setAttribute('aria-expanded', !isExpanded);
+            content.classList.toggle('hidden');
+
+            const arrow = btn.querySelector('span:last-child i'); 
+            arrow.style.transform = !isExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+
+        function validateSAphone(phone) {
+            const phoneDigits = phone.replace(/\s+/g, '');
+            return /^(\+27|0)[6-8][0-9]{8}$/.test(phoneDigits);
+        }
+
+        function calculateRAFDeadline() {
+            const input = document.getElementById('rafDateInput').value;
+            const result = document.getElementById('rafDeadlineResult');
+            if (!input) {
+                result.textContent = "Please select your accident date to calculate the deadline.";
+                return;
+            }
+            const accidentDate = new Date(input);
+            const now = new Date();
+            const deadlineYears = 3;
+            const deadlineDate = new Date(accidentDate);
+            deadlineDate.setFullYear(deadlineDate.getFullYear() + deadlineYears);
+
+            if (deadlineDate < now) {
+                result.textContent = "Unfortunately, your general RAF claim deadline appears to have passed.";
+                result.classList.remove('text-green-900');
+                result.classList.add('text-red-600');
+            } else {
+                const diffDays = Math.ceil((deadlineDate - now) / (1000 * 60 * 60 * 24));
+                result.textContent = `You have approximately ${diffDays} day(s) left to submit your RAF claim (deadline: ${deadlineDate.toLocaleDateString('en-ZA')}). Consult an attorney immediately.`;
+                result.classList.remove('text-red-600');
+                result.classList.add('text-green-900');
+            }
+        }
+
+        function toggleMoreRights() {
+            const moreRights = document.getElementById('moreRights');
+            const button = event.target;
+
+            if (moreRights) {
+                moreRights.classList.toggle('hidden');
+                if (moreRights.classList.contains('hidden')) {
+                    button.innerHTML = 'View More Rights <i class="fas fa-chevron-down ml-2"></i>';
+                } else {
+                    button.innerHTML = 'View Less Rights <i class="fas fa-chevron-up ml-2"></i>';
+                }
+            } else {
+                console.warn("Element with ID 'moreRights' not found for toggleMoreRights function.");
+            }
+        }
+
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            const icon = document.getElementById(id + '-icon');
+
+            if (content && icon) {
+                content.classList.toggle('hidden');
+                if (content.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            } else {
+                console.warn(`Elements with ID '${id}' or '${id}-icon' not found for toggleAccordion function.`);
+            }
+        }
+    </script>
+}

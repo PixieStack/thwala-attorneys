@@ -1,0 +1,550 @@
+﻿@model thwala_attorneys.Models.AttorneyProfileViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Nomthandazo Thwala - Founder & Managing Partner";
+}
+
+<!-- Hero Section with Founder Badge -->
+<section class="relative bg-gradient-to-br from-accent via-gray-900 to-secondary py-20">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center text-white">
+            <div class="inline-flex items-center bg-accent/20 border border-accent text-accent px-4 py-2 rounded-full mb-4">
+                <i class="fas fa-star mr-2"></i>
+                <span class="font-bold">FOUNDER</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Nomthandazo Thwala</h1>
+            <p class="text-xl md:text-2xl text-accent mb-6">Founder & Managing Partner</p>
+            <p class="text-lg opacity-90">Admitted Attorney of the High Court of South Africa</p>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+                <!-- Sidebar -->
+                <div class="lg:col-span-1">
+                    <!-- Profile Card -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden sticky top-8">
+                        <div class="relative">
+                            <img src="/assets/images/thandazo.jpg" alt="Nomthandazo Thwala"
+                                 class="w-full h-50 object-cover">
+                            <div class="absolute top-4 right-4">
+                                <span class="bg-accent text-secondary text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                    FOUNDER
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="p-6">
+                            <!-- Contact Info -->
+                            <div class="space-y-4 mb-6">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-envelope text-primary"></i>
+                                    <a href="mailto:info@thwalaattorneys.co.za" class="text-sm text-gray-600 hover:text-primary">
+                                        info@thwalaattorneys.co.za
+                                    </a>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-phone text-primary"></i>
+                                    <a href="tel:+27123456789" class="text-sm text-gray-600 hover:text-primary">
+                                        +27 12 345 6789
+                                    </a>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fab fa-linkedin text-primary"></i>
+                                    <a href="#" class="text-sm text-gray-600 hover:text-primary">
+                                        LinkedIn Profile
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Experience Badge -->
+                            <div class="text-center py-4 border-t border-gray-200">
+                                <div class="text-3xl font-bold text-primary">5+</div>
+                                <div class="text-sm text-gray-600">Years of Experience</div>
+                            </div>
+
+                            <!-- Languages -->
+                            <div class="mt-6">
+                                <h3 class="font-semibold text-secondary mb-3">Languages</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-gray-100 text-xs rounded-full">English</span>
+                                    <span class="px-3 py-1 bg-gray-100 text-xs rounded-full">Sepedi</span>
+                                    <span class="px-3 py-1 bg-gray-100 text-xs rounded-full">Xitsonga</span>
+                                    <span class="px-3 py-1 bg-gray-100 text-xs rounded-full">isiZulu</span>
+                                    <span class="px-3 py-1 bg-gray-100 text-xs rounded-full">Other SA Languages</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content Area -->
+                <div class="lg:col-span-2 space-y-8">
+
+                    <!-- Professional Summary -->
+                    <div class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-secondary mb-6 flex items-center">
+                            <i class="fas fa-user-tie text-primary mr-3"></i>
+                            Professional Profile
+                        </h2>
+                        <div class="prose text-gray-700 space-y-4">
+                            <p>
+                                Nomthandazo Thwala is the Founder and Managing Partner of Thwala Attorneys, bringing extensive expertise
+                                in Criminal Law and Civil Litigation. With over 5 years of courtroom experience, she has built a solid
+                                reputation for excellence, integrity, and unwavering client dedication.
+                            </p>
+                            <p>
+                                Since establishing Thwala Attorneys in 2020, she has grown the firm from a solo practice to a thriving
+                                legal team, maintaining the highest standards of professional service while fostering a culture of
+                                excellence and compassion. Her leadership style combines strategic vision with hands-on involvement in
+                                complex legal matters.
+                            </p>
+                            <p>
+                                As a passionate advocate for justice, Nomthandazo is committed to making quality legal services accessible
+                                to all. She leads the firm with integrity and purpose, ensuring that every client receives personalized
+                                attention and exceptional legal representation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Areas of Practice -->
+                    <div class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-secondary mb-6 flex items-center">
+                            <i class="fas fa-balance-scale text-primary mr-3"></i>
+                            Areas of Practice
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-4 border-2 border-primary/20 rounded-lg hover:border-primary hover:shadow-md transition-all bg-primary/5">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-gavel text-primary text-xl mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Criminal Law</h3>
+                                        <p class="text-sm text-gray-600 mt-1">Defense and prosecution in criminal matters</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 border-2 border-primary/20 rounded-lg hover:border-primary hover:shadow-md transition-all bg-primary/5">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-briefcase text-primary text-xl mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Civil Litigation</h3>
+                                        <p class="text-sm text-gray-600 mt-1">Complex civil disputes and litigation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-hard-hat text-primary mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Labour & Employment Law</h3>
+                                        <p class="text-sm text-gray-600 mt-1">Workplace disputes and employment matters</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-handshake text-primary mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Corporate & Commercial Law</h3>
+                                        <p class="text-sm text-gray-600 mt-1">Business transactions and corporate governance</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-home text-primary mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Property Law & Conveyancing</h3>
+                                        <p class="text-sm text-gray-600 mt-1">Property transfers and real estate matters</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-users text-primary mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Family & Matrimonial Law</h3>
+                                        <p class="text-sm text-gray-600 mt-1">Divorces and child custody issues</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-car-crash text-primary mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Personal Injury Law</h3>
+                                        <p class="text-sm text-gray-600 mt-1">RAF claims, medical negligence & occupational injuries</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-file-alt text-primary mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Administration of Deceased Estates</h3>
+                                        <p class="text-sm text-gray-600 mt-1">Estate planning and administration</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all md:col-span-2">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-landmark text-primary mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Constitutional Litigation</h3>
+                                        <p class="text-sm text-gray-600 mt-1">Constitutional rights protection and challenges</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Competencies -->
+                    <div class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-secondary mb-6 flex items-center">
+                            <i class="fas fa-certificate text-primary mr-3"></i>
+                            Key Competencies
+                        </h2>
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="font-semibold text-secondary mb-3">Legal Expertise & Leadership</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Admitted Attorney of the High Court of South Africa with extensive courtroom experience</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Specialization in Criminal Law and Civil Litigation with proven track record</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Expert in Constitutional Law and High Court practice</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Comprehensive knowledge of South African legal system and procedures</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-secondary mb-3">Business Development & Management</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Founded and successfully established Thwala Attorneys in 2020</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Strategic planning and business development expertise</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Team building and leadership in legal practice management</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Client relationship management and business growth strategies</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-secondary mb-3">Professional Skills & Attributes</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Exceptional legal research and analytical capabilities</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Strong negotiation and mediation skills</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Excellence in legal drafting and document preparation</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Mentorship and training of junior legal professionals</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professional Journey -->
+                    <div class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-secondary mb-6 flex items-center">
+                            <i class="fas fa-road text-primary mr-3"></i>
+                            Professional Journey
+                        </h2>
+                        <div class="space-y-6">
+                            <!-- Current Position -->
+                            <div class="border-l-4 border-accent pl-6">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-lg font-semibold text-secondary">Founder & Managing Partner</h3>
+                                    <span class="text-sm text-gray-500">2020 - Present</span>
+                                </div>
+                                <p class="text-primary font-medium mb-2">Thwala Attorneys</p>
+                                <p class="text-sm text-gray-600 mb-3">Pretoria, South Africa</p>
+                                <div class="text-sm text-gray-700">
+                                    <ul class="space-y-1">
+                                        <li>• Founded and established successful law practice</li>
+                                        <li>• Built firm from solo practice to multi-attorney team</li>
+                                        <li>• Developed firm's reputation for excellence in criminal and civil law</li>
+                                        <li>• Mentoring junior attorneys and candidate attorneys</li>
+                                        <li>• Strategic planning and business development</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Admission as Attorney -->
+                            <div class="border-l-4 border-primary pl-6">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-lg font-semibold text-secondary">Admitted as Attorney</h3>
+                                    <span class="text-sm text-gray-500">August 2018</span>
+                                </div>
+                                <p class="text-primary font-medium mb-2">High Court of South Africa</p>
+                                <div class="text-sm text-gray-700">
+                                    <p>Successfully passed board examinations and was admitted as an Attorney of the High Court</p>
+                                </div>
+                            </div>
+
+                            <!-- Articles -->
+                            <div class="border-l-4 border-gray-300 pl-6">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-lg font-semibold text-secondary">Candidate Attorney</h3>
+                                    <span class="text-sm text-gray-500">Mar 2016 - Mar 2018</span>
+                                </div>
+                                <p class="text-primary font-medium mb-2">Makhubele Attorneys</p>
+                                <p class="text-sm text-gray-600 mb-3">Articles of Clerkship</p>
+                                <div class="text-sm text-gray-700">
+                                    <ul class="space-y-1">
+                                        <li>• Completed two-year articles of clerkship</li>
+                                        <li>• Gained extensive experience in litigation and court procedures</li>
+                                        <li>• Drafted legal documents and court pleadings</li>
+                                        <li>• Attended court proceedings and consultations</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Law School -->
+                            <div class="border-l-4 border-gray-300 pl-6">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-lg font-semibold text-secondary">Practical Legal Training</h3>
+                                    <span class="text-sm text-gray-500">Jan - Jun 2015</span>
+                                </div>
+                                <p class="text-primary font-medium mb-2">Law School</p>
+                                <p class="text-sm text-gray-600">Auckland Park, Johannesburg</p>
+                            </div>
+
+                            <!-- University -->
+                            <div class="border-l-4 border-gray-300 pl-6">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-lg font-semibold text-secondary">LLB (Bachelor of Laws)</h3>
+                                    <span class="text-sm text-gray-500">Graduated 2014</span>
+                                </div>
+                                <p class="text-primary font-medium mb-2">University of Limpopo</p>
+                                <p class="text-sm text-gray-600">Undergraduate Law Degree</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Personal Interests -->
+                    <div class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-secondary mb-6 flex items-center">
+                            <i class="fas fa-heart text-primary mr-3"></i>
+                            Personal Interests
+                        </h2>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="text-center p-4 rounded-lg bg-gray-50 hover:bg-primary/5 transition-colors">
+                                <i class="fas fa-balance-scale-right text-3xl text-primary mb-2"></i>
+                                <p class="text-sm text-gray-700">Pro Bono Legal Work</p>
+                            </div>
+                            <div class="text-center p-4 rounded-lg bg-gray-50 hover:bg-primary/5 transition-colors">
+                                <i class="fas fa-graduation-cap text-3xl text-primary mb-2"></i>
+                                <p class="text-sm text-gray-700">Legal Education & Mentoring</p>
+                            </div>
+                            <div class="text-center p-4 rounded-lg bg-gray-50 hover:bg-primary/5 transition-colors">
+                                <i class="fas fa-users text-3xl text-primary mb-2"></i>
+                                <p class="text-sm text-gray-700">Community Development</p>
+                            </div>
+                            <div class="text-center p-4 rounded-lg bg-gray-50 hover:bg-primary/5 transition-colors">
+                                <i class="fas fa-book-open text-3xl text-primary mb-2"></i>
+                                <p class="text-sm text-gray-700">Legal Research & Writing</p>
+                            </div>
+                            <div class="text-center p-4 rounded-lg bg-gray-50 hover:bg-primary/5 transition-colors">
+                                <i class="fas fa-running text-3xl text-primary mb-2"></i>
+                                <p class="text-sm text-gray-700">Fitness & Wellness</p>
+                            </div>
+                            <div class="text-center p-4 rounded-lg bg-gray-50 hover:bg-primary/5 transition-colors">
+                                <i class="fas fa-music text-3xl text-primary mb-2"></i>
+                                <p class="text-sm text-gray-700">Music & Arts</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Leadership & Vision -->
+                    <div class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-secondary mb-6 flex items-center">
+                            <i class="fas fa-lightbulb text-primary mr-3"></i>
+                            Leadership & Vision
+                        </h2>
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="font-semibold text-secondary mb-3">Firm Leadership</h3>
+                                <p class="text-gray-700 mb-4">
+                                    As the founder of Thwala Attorneys, Nomthandazo has built a firm that stands on the pillars of
+                                    integrity, excellence, and client-focused service. Her leadership style emphasizes:
+                                </p>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                        <span>Creating a supportive environment for legal professionals to thrive</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                        <span>Maintaining the highest ethical standards in all legal matters</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                        <span>Fostering innovation in legal service delivery</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                        <span>Building lasting relationships with clients based on trust</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Personal Philosophy -->
+                    <div class="bg-accent/10 border-l-4 border-accent rounded-lg p-6">
+                        <h3 class="font-semibold text-secondary mb-3 flex items-center">
+                            <i class="fas fa-quote-left text-accent mr-2"></i>
+                            Personal Philosophy
+                        </h3>
+                        <p class="text-gray-700 italic">
+                            "I believe that every person deserves quality legal representation and access to justice. My mission is to
+                            provide exceptional legal services while maintaining the highest standards of integrity and professionalism.
+                            At Thwala Attorneys, we don't just practice law – we champion justice and make a difference in people's lives."
+                        </p>
+                        <p class="text-right text-sm text-gray-600 mt-4">- Nomthandazo Thwala</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="bg-secondary py-16">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center text-white">
+            <h2 class="text-3xl font-bold mb-4">Ready to Discuss Your Legal Needs?</h2>
+            <p class="text-lg mb-8 opacity-90">
+                With years of experience and a commitment to excellence, I'm here to provide the legal support you deserve.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a asp-controller="Consultation" asp-action="Index" class="bg-accent text-secondary px-8 py-3 rounded-lg font-medium hover:bg-accent/90 transition-colors">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-secondary mb-4">What Clients Say</h2>
+                <p class="text-gray-600">Testimonials from those we've had the privilege to represent</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">
+                        "Nomthandazo's expertise in criminal law is exceptional. She handled my case with professionalism
+                        and achieved an outcome beyond my expectations."
+                    </p>
+                    <p class="font-semibold text-secondary">- J. Mahlangu</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">
+                        "The team at Thwala Attorneys provided excellent service during my civil litigation matter.
+                        Highly recommended for their dedication and expertise."
+                    </p>
+                    <p class="font-semibold text-secondary">- T. Ndlovu</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">
+                        "Professional, compassionate, and results-driven. Nomthandazo went above and beyond to ensure
+                        the best outcome for my family law matter."
+                    </p>
+                    <p class="font-semibold text-secondary">- S. Mokoena</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Back to Team Link -->
+<div class="bg-gray-100 py-8">
+    <div class="container mx-auto px-4 text-center">
+        <a asp-controller="Home" asp-action="Index" asp-fragment="team" class="inline-flex items-center text-primary hover:text-primary-dark font-medium">
+            <i class="fas fa-arrow-left mr-2"></i>
+            Back to Our Team
+        </a>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script>
+        function closeModal() {
+            document.getElementById('successModal').classList.add('hidden');
+            document.getElementById('successModal').classList.remove('flex');
+        }
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Show success modal
+            document.getElementById('successModal').classList.remove('hidden');
+            document.getElementById('successModal').classList.add('flex');
+            // Reset form
+            this.reset();
+        });
+    </script>
+}

@@ -1,0 +1,1368 @@
+﻿@{
+    ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Hero Section -->
+<section id="home" class="relative bg-cover bg-center h-[90vh] flex items-center" style="background-image: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+    <div class="absolute inset-0 hero-gradient"></div>
+    <div class="container mx-auto px-4 md:px-8 relative z-10">
+        <div class="max-w-3xl">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white font-playfair leading-tight mb-6">
+                Excellence in Legal <span class="text-accent">Representation</span>
+            </h1>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl">
+                Dedicated to protecting your rights and delivering justice with integrity, expertise, and personalized attention to every case.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a asp-controller="Consultation" asp-action="Index" class="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded shadow-lg font-medium transition-all duration-300 text-lg">
+                    Request a Consultation
+                </a>
+                <a href="#services" class="bg-white hover:bg-gray-100 text-secondary px-8 py-4 rounded shadow-lg font-medium transition-all duration-300 text-lg">
+                    Our Services
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-secondary font-playfair mb-4">Why Choose Thwala Attorneys?</h2>
+            <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                We combine legal expertise with personalized attention to deliver successful outcomes for our clients.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Feature 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl">
+                <div class="inline-block p-4 rounded-full bg-primary/10 text-primary mb-5">
+                    <i class="fas fa-balance-scale text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary mb-3">Experienced Attorneys</h3>
+                <p class="text-gray-600">Our team brings decades of combined experience across diverse legal specialties.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="bg-white p-8 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl">
+                <div class="inline-block p-4 rounded-full bg-primary/10 text-primary mb-5">
+                    <i class="fas fa-gavel text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary mb-3">Proven Track Record</h3>
+                <p class="text-gray-600">We have a history of successful outcomes and satisfied clients throughout South Africa.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="bg-white p-8 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl">
+                <div class="inline-block p-4 rounded-full bg-primary/10 text-primary mb-5">
+                    <i class="fas fa-handshake text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary mb-3">Client-Centered Approach</h3>
+                <p class="text-gray-600">Your needs and objectives are our priority, with personalized strategies for every case.</p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="bg-white p-8 rounded-lg shadow-md text-center transition-all duration-300 hover:shadow-xl">
+                <div class="inline-block p-4 rounded-full bg-primary/10 text-primary mb-5">
+                    <i class="fas fa-comments text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-secondary mb-3">Clear Communication</h3>
+                <p class="text-gray-600">We explain complex legal matters in plain language and keep you informed at every step.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1">
+                <span class="text-primary font-medium">ABOUT OUR FIRM</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary font-playfair mt-2 mb-6">A Legacy of Excellence in Legal Practice</h2>
+
+                <p class="text-gray-700 mb-4">
+                    Thwala Attorneys is a premier full-service law firm dedicated to providing exceptional legal representation across South Africa. Founded on principles of integrity, excellence, and client satisfaction, we have established ourselves as trusted legal advisors to individuals, families, and businesses.
+                </p>
+
+                <p class="text-gray-700 mb-6">
+                    Our team combines deep legal knowledge with practical understanding of diverse industries to deliver strategic, effective solutions tailored to each client's unique situation and objectives.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                    <div class="flex items-start">
+                        <div class="text-primary mr-3 mt-1">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-secondary">5+ Years Experience</h4>
+                            <p class="text-sm text-gray-600">Decades of combined legal practice</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="text-primary mr-3 mt-1">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-secondary">Strategic Approach</h4>
+                            <p class="text-sm text-gray-600">Customized legal strategies</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="text-primary mr-3 mt-1">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-secondary">Client Satisfaction</h4>
+                            <p class="text-sm text-gray-600">Exceptional service every time</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="text-primary mr-3 mt-1">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-secondary">Diverse Expertise</h4>
+                            <p class="text-sm text-gray-600">Comprehensive legal services</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a asp-controller="AboutUs" asp-action="Index" class="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded shadow-md font-medium inline-block transition-colors duration-300">
+                    Learn More About Us
+                </a>
+            </div>
+
+            <div class="order-1 lg:order-2 relative">
+                <div class="relative z-10">
+                    <img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80" alt="Thwala Attorneys Team" class="w-full h-auto rounded-lg shadow-xl">
+                </div>
+                <div class="hidden lg:block absolute -bottom-6 -left-6 w-64 h-64 bg-primary/10 rounded-lg -z-10"></div>
+                <div class="hidden lg:block absolute -top-6 -right-6 w-32 h-32 bg-accent/20 rounded-lg -z-10"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="text-center mb-16">
+            <span class="text-primary font-medium">OUR EXPERTISE</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-secondary font-playfair mt-2 mb-4">Comprehensive Legal Services</h2>
+            <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                We offer a wide range of legal services to meet your personal and business needs with expertise and dedication.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="h-3 bg-primary"></div>
+                <div class="p-8">
+                    <div class="flex items-center mb-5">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary/10 text-primary mr-4">
+                            <i class="fas fa-balance-scale text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary">Criminal Law</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Expert defense representation for all criminal matters, from minor offenses to serious crimes, with a focus on protecting your rights and securing the best possible outcome.
+                    </p>
+                    <a asp-controller="Services" asp-action="CriminalLaw" class="inline-flex items-center text-primary font-medium hover:text-primary-dark">
+                        Learn More
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="h-3 bg-primary"></div>
+                <div class="p-8">
+                    <div class="flex items-center mb-5">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary/10 text-primary mr-4">
+                            <i class="fas fa-gavel text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary">Civil Litigation</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Comprehensive representation in all civil disputes, from pre-litigation negotiations to trial advocacy, ensuring your interests are vigorously protected throughout the legal process.
+                    </p>
+                    <a asp-controller="Services" asp-action="CivilLitigation" class="inline-flex items-center text-primary font-medium hover:text-primary-dark">
+                        Learn More
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="h-3 bg-primary"></div>
+                <div class="p-8">
+                    <div class="flex items-center mb-5">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary/10 text-primary mr-4">
+                            <i class="fas fa-briefcase text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary">Labour & Employment Law</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Expert guidance on all workplace matters including unfair dismissals, employment contracts, workplace discrimination, and CCMA representation for both employers and employees.
+                    </p>
+                    <a asp-controller="Services" asp-action="LabourEmploymentLaw" class="inline-flex items-center text-primary font-medium hover:text-primary-dark">
+                        Learn More
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="h-3 bg-primary"></div>
+                <div class="p-8">
+                    <div class="flex items-center mb-5">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary/10 text-primary mr-4">
+                            <i class="fas fa-building text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary">Corporate & Commercial Law</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Comprehensive legal services for businesses of all sizes, including company formation, contracts, mergers and acquisitions, corporate governance, and regulatory compliance.
+                    </p>
+                    <a asp-controller="Services" asp-action="CorporateCommercialLaw" class="inline-flex items-center text-primary font-medium hover:text-primary-dark">
+                        Learn More
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="h-3 bg-primary"></div>
+                <div class="p-8">
+                    <div class="flex items-center mb-5">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary/10 text-primary mr-4">
+                            <i class="fas fa-home text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary">Property Law & Conveyancing</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Specialized assistance with property transactions, transfer of ownership, lease agreements, sectional titles, and all real estate legal matters with meticulous attention to detail.
+                    </p>
+                    <a asp-controller="Services" asp-action="PropertyLawConveyancing" class="inline-flex items-center text-primary font-medium hover:text-primary-dark">
+                        Learn More
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="h-3 bg-primary"></div>
+                <div class="p-8">
+                    <div class="flex items-center mb-5">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary/10 text-primary mr-4">
+                            <i class="fas fa-heart text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary">Family & Matrimonial Law</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Compassionate guidance through divorces, child custody disputes, maintenance issues, domestic violence cases, and other family-related legal matters with sensitivity and care.
+                    </p>
+                    <a asp-controller="Services" asp-action="FamilyMatrimonialLaw" class="inline-flex items-center text-primary font-medium hover:text-primary-dark">
+                        Learn More
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 7 -->
+            <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="h-3 bg-primary"></div>
+                <div class="p-8">
+                    <div class="flex items-center mb-5">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary/10 text-primary mr-4">
+                            <i class="fas fa-ambulance text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary">Personal Injury</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Dedicated representation for Road Accident Fund claims, medical negligence cases, and workplace injuries, helping you secure the compensation you deserve for your suffering.
+                    </p>
+                    <a asp-controller="Services" asp-action="PersonalInjury" class="inline-flex items-center text-primary font-medium hover:text-primary-dark">
+                        Learn More
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 8 -->
+            <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="h-3 bg-primary"></div>
+                <div class="p-8">
+                    <div class="flex items-center mb-5">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary/10 text-primary mr-4">
+                            <i class="fas fa-file-contract text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary">Administration Of Deceased Estates</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Professional handling of all aspects of estate administration, including wills, trusts, probate matters, and succession planning with compassion during difficult times.
+                    </p>
+                    <a asp-controller="Services" asp-action="AdministrationOfEstates" class="inline-flex items-center text-primary font-medium hover:text-primary-dark">
+                        Learn More
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 9 -->
+            <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="h-3 bg-primary"></div>
+                <div class="p-8">
+                    <div class="flex items-center mb-5">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-primary/10 text-primary mr-4">
+                            <i class="fas fa-scale-balanced text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary">Constitutional Litigation</h3>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        Strategic legal challenges to laws and actions that infringe on constitutional rights, ensuring the protection of fundamental freedoms.
+                    </p>
+                    <a asp-controller="Services" asp-action="ConstitutionalLitigation" class="inline-flex items-center text-primary font-medium hover:text-primary-dark">
+                        Learn More
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <!-- All Services Call to Action -->
+            <div class="md:col-span-2 lg:col-span-3 mt-6">
+                <div class="bg-secondary/5 border border-secondary/10 rounded-lg p-8 text-center">
+                    <h3 class="text-xl font-bold text-secondary mb-4">Need a specialized legal service?</h3>
+                    <p class="text-gray-600 mb-6">
+                        Our experienced team offers tailored solutions for complex legal challenges. Contact us to discuss your specific needs.
+                    </p>
+                    <a asp-controller="Consultation" asp-action="Index" class="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded shadow-md font-medium inline-block transition-colors duration-300">
+                        Discuss Your Case
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section id="team" class="py-20">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="text-center mb-16">
+            <span class="text-primary font-medium">OUR ATTORNEYS</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-secondary font-playfair mt-2 mb-4">Meet Our Expert Legal Team</h2>
+            <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Our attorneys bring decades of combined experience and a passion for justice to every case we handle.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <!-- Attorney 1 - Founder -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden group relative">
+                <!-- Founder Badge -->
+                <div class="absolute top-4 right-4 z-10">
+                    <span class="bg-accent text-secondary text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                        FOUNDER
+                    </span>
+                </div>
+
+                <div class="relative overflow-hidden">
+                    <img src="/assets/images/thandazo.jpg" alt="Nomthandazo Thwala - Founder" class="w-full h-70 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 w-full">
+                            <div class="flex justify-center space-x-3">
+                                <a href="#" class="text-white hover:text-accent bg-primary/30 p-2 rounded-full transition-colors duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-accent bg-primary/30 p-2 rounded-full transition-colors duration-300">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-accent bg-primary/30 p-2 rounded-full transition-colors duration-300">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-6 border-t-2 border-accent">
+                    <h3 class="text-xl font-bold text-secondary">Nomthandazo Thwala</h3>
+                    <p class="text-primary font-medium mb-3">Founder & Managing Partner</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Founder of Thwala Attorneys with extensive expertise in Criminal Law and Civil Litigation. With over 5 years of courtroom experience, she has built a reputation for excellence and client dedication. She leads the firm with integrity and purpose.
+                    </p>
+
+                    <a asp-controller="AttorneyProfiles" asp-action="NomthandazoProfile" class="inline-flex items-center text-primary font-medium hover:text-primary-dark">
+                        View Profile
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Attorney 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                <div class="relative overflow-hidden">
+                    <img src="/assets/images/nkateko.jpg" alt="Attorney" class="w-full h-70 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 w-full">
+                            <div class="flex justify-center space-x-3">
+                                <a href="#" class="text-white hover:text-accent bg-primary/30 p-2 rounded-full transition-colors duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-accent bg-primary/30 p-2 rounded-full transition-colors duration-300">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-accent bg-primary/30 p-2 rounded-full transition-colors duration-300">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-secondary">Mikateko Ngobeni </h3>
+                    <p class="text-primary font-medium mb-3">Senior Partner</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Mikateko Ngobeni is a Senior Partner and founding member of the firm, offering strong leadership and guiding its strategic vision.
+                        She brings extensive legal expertise and plays a key role in the firm’s continued growth and success.
+                    </p>
+                    <a asp-controller="AttorneyProfiles" asp-action="NkatekoProfile" class="inline-flex items-center text-primary font-medium hover:text-primary-dark">
+                        View Profile
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Attorney 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                <div class="relative overflow-hidden">
+                    <img src="/assets/images/ntshuxeko.jpg" alt="Attorney" class="w-full h-70 object-cover object-center transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div class="p-4 w-full">
+                            <div class="flex justify-center space-x-3">
+                                <a href="#" class="text-white hover:text-accent bg-primary/30 p-2 rounded-full transition-colors duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-accent bg-primary/30 p-2 rounded-full transition-colors duration-300">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-accent bg-primary/30 p-2 rounded-full transition-colors duration-300">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-secondary">Ntshuxeko Nkandzi</h3>
+                    <p class="text-primary font-medium mb-3">Candidate Attorney</p>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Ntshuxeko Nkandzi is currently serving as a Candidate Attorney, assisting the firm’s legal team while completing his articles of clerkship.
+                        He is committed to supporting the firm’s work and upholding its professional standards.
+                    </p>
+                    <a asp-controller="AttorneyProfiles" asp-action="NtshuxekoProfile" class="inline-flex items-center text-primary font-medium hover:text-primary-dark">
+                        View Profile
+                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="text-center mb-16">
+            <span class="text-primary font-medium">CLIENT TESTIMONIALS</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-secondary font-playfair mt-2 mb-4">What Our Clients Say</h2>
+            <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Real experiences from clients we've had the privilege to represent
+            </p>
+        </div>
+
+        <!-- Testimonials Carousel -->
+        <div class="max-w-7xl mx-auto overflow-hidden">
+            <div id="testimonialCarousel" class="flex transition-transform duration-1000 ease-in-out">
+
+                <!-- Set 1 -->
+                <div class="testimonial-set w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "I was wrongfully arrested and charged with fraud. The team at Thwala Attorneys worked tirelessly to prove my innocence. They scrutinized every piece of evidence, brought in expert witnesses, and dismantled the prosecution's case. Today, I'm a free person with my reputation intact. Their criminal defense expertise is unmatched."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Ayanda Mthembu</h4>
+                            <p class="text-sm text-gray-500">Criminal Law Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "After a devastating car accident left me paralyzed, Thwala Attorneys handled my RAF claim with exceptional skill. They fought for comprehensive compensation covering medical costs, loss of income, and future care. The settlement has ensured I can afford the best rehabilitation and support my family."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Thabo Nkosi</h4>
+                            <p class="text-sm text-gray-500">Personal Injury Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "My divorce was complicated with significant assets and custody issues. Thwala Attorneys protected my interests while keeping my children's wellbeing at the forefront. They negotiated a fair settlement and custody arrangement that works for everyone. Their compassionate approach made all the difference."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Lerato Molefe</h4>
+                            <p class="text-sm text-gray-500">Family Law Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Set 2 -->
+                <div class="testimonial-set w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "When a former business partner sued me for R2 million, I thought I'd lose everything. Thwala Attorneys built an impeccable defense, exposed inconsistencies in their claims, and won the case. Their litigation skills saved my business and my livelihood. I'm forever grateful."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Karabo Mokoena</h4>
+                            <p class="text-sm text-gray-500">Civil Litigation Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "I faced an armed robbery charge that could have meant 15 years in prison. Thwala Attorneys believed in my innocence when no one else did. They uncovered CCTV footage proving I was elsewhere and exposed flaws in witness testimonies. Walking free from court was the best day of my life."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Sipho Khumalo</h4>
+                            <p class="text-sm text-gray-500">Criminal Law Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "After 20 years with my company, I was dismissed without warning or proper procedure. Thwala Attorneys took my unfair dismissal case and proved multiple labour law violations. The CCMA ruling was in my favor with full reinstatement and back pay. Justice was served."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Nokuthula Ngcobo</h4>
+                            <p class="text-sm text-gray-500">Labour Law Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Set 3 -->
+                <div class="testimonial-set w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "Starting my tech company required complex legal structuring. Thwala Attorneys guided me through company registration, shareholder agreements, and IP protection. Their corporate law expertise helped me avoid costly mistakes and set a solid foundation for growth. They're now our trusted legal advisors."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Boitumelo Ramaphosa</h4>
+                            <p class="text-sm text-gray-500">Corporate Law Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "When the municipality tried to expropriate my property without fair compensation, Thwala Attorneys took on this David vs Goliath battle. They argued my constitutional rights brilliantly in court, setting a precedent for property rights. I kept my land and received proper compensation for the portion needed."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Tumelo Radebe</h4>
+                            <p class="text-sm text-gray-500">Constitutional Law Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "My husband left me with nothing after 30 years of marriage. Thwala Attorneys fought for my rights, proving my contributions to our wealth. They secured maintenance, a fair asset division, and ensured I could maintain my standard of living. Their dedication to justice for women is admirable."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Sibongile Zulu</h4>
+                            <p class="text-sm text-gray-500">Family Law Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Set 4 -->
+                <div class="testimonial-set w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "A botched surgery left me permanently disabled. Thwala Attorneys took on the hospital and surgeon in a medical negligence case. They brought in medical experts, proved negligence conclusively, and secured compensation that covers my lifetime care needs. Their thoroughness was impressive."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Tshepo Ndlovu</h4>
+                            <p class="text-sm text-gray-500">Medical Negligence Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "Purchasing our dream home turned into a nightmare when hidden defects emerged. Thwala Attorneys helped us sue the seller for non-disclosure and won. They also handled the complex property transfer flawlessly. Their property law expertise saved us from financial ruin."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Pieter van der Merwe</h4>
+                            <p class="text-sm text-gray-500">Property Law Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "My mother's estate was complex with properties in three provinces and feuding siblings. Thwala Attorneys administered everything professionally, mediating between family members and ensuring fair distribution. They turned a potential family war into a peaceful resolution."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Annelie Botha</h4>
+                            <p class="text-sm text-gray-500">Estate Administration Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Set 5 -->
+                <div class="testimonial-set w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "I was accused of assault after defending myself. Thwala Attorneys proved it was self-defense through witness statements and security footage. They prevented a criminal record that would have destroyed my career. Their strategic defense approach was brilliant."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Hendrik de Klerk</h4>
+                            <p class="text-sm text-gray-500">Criminal Law Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "My ex-husband disappeared with our children to another province. Thwala Attorneys acted swiftly, obtaining urgent court orders and working with authorities to locate them. My children were returned safely, and custody was secured. Their quick action saved my family."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Marlize du Plessis</h4>
+                            <p class="text-sm text-gray-500">Family Law Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "A contractor's shoddy work cost me R500,000 in repairs. Thwala Attorneys pursued them relentlessly, froze their assets, and recovered my money plus damages. Their civil litigation expertise turned my disaster into victory. Highly recommended for any civil disputes."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Frans Coetzee</h4>
+                            <p class="text-sm text-gray-500">Civil Litigation Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Set 6 -->
+                <div class="testimonial-set w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "My employer was deducting illegal amounts from my salary and ignoring labour laws. Thwala Attorneys not only recovered three years of illegal deductions but also ensured workplace compliance. They're champions for workers' rights."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Elsabé Smit</h4>
+                            <p class="text-sm text-gray-500">Labour Law Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "Setting up our franchise required complex agreements and compliance. Thwala Attorneys handled everything from franchise agreements to employment contracts. Their business acumen combined with legal expertise made them invaluable partners in our success."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Jacques van Wyk</h4>
+                            <p class="text-sm text-gray-500">Corporate Law Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "I suffered severe injuries in a workplace accident due to safety violations. Thwala Attorneys fought both the Compensation Fund claim and a civil case against my employer. The settlement ensures I'm financially secure despite being unable to work again."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Riaan Steyn</h4>
+                            <p class="text-sm text-gray-500">Personal Injury Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Set 7 -->
+                <div class="testimonial-set w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "Complex property development deals require expert legal guidance. Thwala Attorneys structured our joint ventures, handled municipal approvals, and managed conveyancing for 50+ units. Their property law expertise is unmatched in the industry."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Lize Venter</h4>
+                            <p class="text-sm text-gray-500">Property Law Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "When government regulations threatened to shut down our NPO, Thwala Attorneys challenged the constitutionality of these regulations. Their constitutional law expertise resulted in a landmark ruling that protected not just us, but all similar organizations."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Kobus Pretorius</h4>
+                            <p class="text-sm text-gray-500">Constitutional Law Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "My father's will was contested by distant relatives claiming inheritance. Thwala Attorneys defended the will's validity successfully and ensured his wishes were honored. Their estate expertise prevented years of family conflict."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Michael Smith</h4>
+                            <p class="text-sm text-gray-500">Estate Administration Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Set 8 -->
+                <div class="testimonial-set w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "Facing drug possession charges was terrifying. Thwala Attorneys found procedural errors in my arrest and evidence handling. Charges were dropped, and they helped me get into rehabilitation instead of prison. They saved my future."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Jessica Thompson</h4>
+                            <p class="text-sm text-gray-500">Criminal Law Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "My business partner tried to force me out after I discovered financial irregularities. Thwala Attorneys secured urgent interdicts, conducted forensic audits, and proved fraud. I retained my business and the partner faces criminal charges."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">David Taylor</h4>
+                            <p class="text-sm text-gray-500">Civil Litigation Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "After 15 years of marriage, I discovered my husband had hidden assets overseas. Thwala Attorneys uncovered everything through international cooperation and forensic accounting. The revised settlement was triple the original offer. Their determination to find the truth was remarkable."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Ashley Williams</h4>
+                            <p class="text-sm text-gray-500">Family Law Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Set 9 -->
+                <div class="testimonial-set w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "Merging two companies required careful legal orchestration. Thwala Attorneys handled due diligence, contract negotiations, and regulatory compliance flawlessly. Their corporate expertise ensured a smooth transition that positioned us for market leadership."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Sarah Johnson</h4>
+                            <p class="text-sm text-gray-500">Corporate Law Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "I was retrenched while on maternity leave, which is illegal. Thwala Attorneys not only won my case but set a precedent for protecting pregnant workers. The compensation and reinstatement offer showed that no employer is above the law."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Chloe Evans</h4>
+                            <p class="text-sm text-gray-500">Labour Law Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "A taxi knocked me off my motorcycle, leaving me with permanent injuries. Thwala Attorneys navigated the complex RAF process, fighting for proper assessment of my disabilities. The payout covers all my medical needs and lost income. Their persistence made the difference."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Ryan Harris</h4>
+                            <p class="text-sm text-gray-500">Personal Injury Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Set 10 -->
+                <div class="testimonial-set w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "Boundary disputes with my neighbor escalated to court proceedings. Thwala Attorneys resolved it through skilled mediation and property law expertise, avoiding costly litigation. They saved both time and neighborly relations while protecting my property rights."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Nathan Clarke</h4>
+                            <p class="text-sm text-gray-500">Property Law Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "My late husband's family tried to evict me from our home, ignoring my marriage and contributions. Thwala Attorneys fought for my rights as a surviving spouse, securing the house and maintenance. They gave me dignity during my darkest time."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Emma Parker</h4>
+                            <p class="text-sm text-gray-500">Estate Administration Client</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg flex flex-col h-full">
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            <p class="text-gray-600 italic flex-grow">
+                                "Wrongfully accused of theft by my employer, I faced criminal charges and job loss. Thwala Attorneys proved the real thief through forensic evidence and CCTV analysis. Charges dropped, job restored with compensation, and the actual perpetrator prosecuted."
+                            </p>
+                        </div>
+                        <div class="border-t p-6 mt-auto">
+                            <h4 class="font-bold text-secondary">Joshua Anderson</h4>
+                            <p class="text-sm text-gray-500">Criminal Law Client</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Carousel Indicators -->
+        <div class="flex justify-center mt-8 space-x-2" id="carouselDots">
+            <span class="carousel-dot w-2 h-2 bg-primary rounded-full cursor-pointer transition-all duration-300"></span>
+            <span class="carousel-dot w-2 h-2 bg-gray-300 rounded-full cursor-pointer transition-all duration-300"></span>
+            <span class="carousel-dot w-2 h-2 bg-gray-300 rounded-full cursor-pointer transition-all duration-300"></span>
+            <span class="carousel-dot w-2 h-2 bg-gray-300 rounded-full cursor-pointer transition-all duration-300"></span>
+            <span class="carousel-dot w-2 h-2 bg-gray-300 rounded-full cursor-pointer transition-all duration-300"></span>
+            <span class="carousel-dot w-2 h-2 bg-gray-300 rounded-full cursor-pointer transition-all duration-300"></span>
+            <span class="carousel-dot w-2 h-2 bg-gray-300 rounded-full cursor-pointer transition-all duration-300"></span>
+            <span class="carousel-dot w-2 h-2 bg-gray-300 rounded-full cursor-pointer transition-all duration-300"></span>
+            <span class="carousel-dot w-2 h-2 bg-gray-300 rounded-full cursor-pointer transition-all duration-300"></span>
+            <span class="carousel-dot w-2 h-2 bg-gray-300 rounded-full cursor-pointer transition-all duration-300"></span>
+        </div>
+    </div>
+</section>
+
+
+<!-- Call to Action -->
+<section id="cta" class="py-20 bg-secondary relative">
+    <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
+    <div class="container mx-auto px-4 md:px-8 relative z-10">
+        <div class="text-center max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-playfair mb-6">
+                5+ Years of Legal Excellence in South Africa
+            </h2>
+            <p class="text-white/80 text-lg mb-10 max-w-3xl mx-auto">
+                Our experienced team of attorneys is ready to help you navigate your legal challenges with expertise, integrity, and dedication to achieving the best possible outcome.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a asp-controller="Consultation" asp-action="Index" class="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded shadow-lg font-medium transition-all duration-300 text-lg">
+                    Schedule a Consultation
+                </a>
+                <a asp-controller="ContactUs" asp-action="Index" class="bg-white hover:bg-gray-100 text-secondary px-8 py-4 rounded shadow-lg font-medium transition-all duration-300 text-lg">
+                    Contact Us Today
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="py-20">
+    <div class="container mx-auto px-4 md:px-8">
+        <div class="text-center mb-16">
+            <span class="text-primary font-medium">FREQUENTLY ASKED QUESTIONS</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-secondary font-playfair mt-2 mb-4">Common Legal Questions</h2>
+            <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Find answers to some of the most common questions about our services and legal processes.
+            </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+            <!-- FAQ Item 1 -->
+            <div class="mb-6 border-b border-gray-200 pb-6">
+                <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(this)">
+                    <h3 class="text-xl font-bold text-secondary">How much does an initial consultation cost?</h3>
+                    <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer hidden mt-4">
+                    <p class="text-gray-600">
+                        At Thwala Attorneys, our consultation fees vary based on the type of legal assistance you need and the complexity of your case. We'll provide you with clear pricing information when you contact us to schedule your consultation. This initial meeting allows us to evaluate your case and for you to determine if our firm is the right fit for your legal needs.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="mb-6 border-b border-gray-200 pb-6">
+                <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(this)">
+                    <h3 class="text-xl font-bold text-secondary">How long will my case take to resolve?</h3>
+                    <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer hidden mt-4">
+                    <p class="text-gray-600">
+                        The timeline for resolving legal cases varies widely depending on the type of case, complexity, court schedules, and whether a settlement is possible. Some matters can be resolved in a few weeks, while others might take months or even years. During your consultation, we can provide a more specific estimate based on the details of your case and our experience with similar matters.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="mb-6 border-b border-gray-200 pb-6">
+                <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(this)">
+                    <h3 class="text-xl font-bold text-secondary">What are your payment options and fee structures?</h3>
+                    <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer hidden mt-4">
+                    <p class="text-gray-600">
+                        We offer several payment options to accommodate our clients' needs. Our fees vary based on the type of legal help you require. Depending on the case type, we may work on a contingency basis (where we only get paid if you win), flat fee arrangements, or hourly billing. We accept cash, credit cards, and electronic transfers. Payment plans can also be arranged in certain circumstances. We'll discuss all fee structures clearly during your initial consultation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="mb-6 border-b border-gray-200 pb-6">
+                <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(this)">
+                    <h3 class="text-xl font-bold text-secondary">Do I need to come to your office for meetings?</h3>
+                    <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer hidden mt-4">
+                    <p class="text-gray-600">
+                        While we welcome in-person meetings at our office, we understand that not all clients can easily travel to us. We offer consultations and meetings via video conferencing, phone calls, or in some cases, we can arrange to meet at a location convenient for you. Our goal is to make accessing legal services as convenient as possible for our clients.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="mb-6">
+                <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(this)">
+                    <h3 class="text-xl font-bold text-secondary">What documents should I bring to my first meeting?</h3>
+                    <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                </button>
+                <div class="faq-answer hidden mt-4">
+                    <p class="text-gray-600">
+                        For your initial consultation, bring any documents relevant to your case. This might include contracts, correspondence, police reports, medical records, employment documents, or court papers you've received. Also bring identification and any notes you've made about your situation. If you're unsure what to bring, contact us before your appointment, and we'll provide specific guidance based on your case type.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section --- Will implement this at a later stage-->
+@* <section id="newsletter" class="py-16 bg-primary"> *@
+@*     <div class="container mx-auto px-4 md:px-8"> *@
+@*         <div class="max-w-4xl mx-auto text-center"> *@
+@*             <h2 class="text-2xl md:text-3xl font-bold text-white font-playfair mb-6"> *@
+@*                 Subscribe to Our Legal Newsletter *@
+@*             </h2> *@
+@*             <p class="text-white/80 mb-8"> *@
+@*                 Stay informed about important legal updates, case studies, and tips that can help protect your rights and interests. *@
+@*             </p> *@
+@*             <form class="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto"> *@
+@*                 <input type="email" placeholder="Your email address" class="flex-grow px-5 py-3 rounded-md focus:outline-none" required> *@
+@*                 <button type="submit" class="bg-accent hover:bg-accent-light text-secondary font-medium px-6 py-3 rounded-md transition-colors duration-300 whitespace-nowrap"> *@
+@*                     Subscribe Now *@
+@*                 </button> *@
+@*             </form> *@
+@*             <p class="text-white/60 text-sm mt-4"> *@
+@*                 We respect your privacy. Unsubscribe at any time. *@
+@*             </p> *@
+@*         </div> *@
+@*     </div> *@
+@* </section> *@
+
+
+<!-- Back to Top Button -->
+<button id="back-to-top" class="fixed bottom-6 right-6 bg-primary hover:bg-primary-dark text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 opacity-0 invisible">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- JavaScript for carousel functionality -->
+<script>
+    (function() {
+        let currentTestimonialSet = 0;
+        const testimonialSets = document.querySelectorAll('.testimonial-set').length;
+        const carousel = document.getElementById('testimonialCarousel');
+        const dots = document.querySelectorAll('.carousel-dot');
+        let autoRotateInterval;
+
+        function showTestimonialSet(index) {
+            // Ensure index wraps around
+            currentTestimonialSet = index % testimonialSets;
+            if (currentTestimonialSet < 0) currentTestimonialSet = testimonialSets - 1;
+
+            // Apply transform
+            carousel.style.transform = `translateX(-${currentTestimonialSet * 100}%)`;
+
+            // Update dots
+            dots.forEach((dot, i) => {
+                if (i === currentTestimonialSet) {
+                    dot.classList.remove('bg-gray-300', 'w-2');
+                    dot.classList.add('bg-primary', 'w-8');
+                } else {
+                    dot.classList.remove('bg-primary', 'w-8');
+                    dot.classList.add('bg-gray-300', 'w-2');
+                }
+            });
+        }
+
+        function nextTestimonialSet() {
+            showTestimonialSet(currentTestimonialSet + 1);
+        }
+
+        function startAutoRotate() {
+            autoRotateInterval = setInterval(nextTestimonialSet, 60000); // 60 seconds = 1 minute
+        }
+
+        function stopAutoRotate() {
+            clearInterval(autoRotateInterval);
+        }
+
+        // Initialize
+        showTestimonialSet(0);
+        startAutoRotate();
+
+        // Add click functionality to dots
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                stopAutoRotate();
+                showTestimonialSet(index);
+                startAutoRotate(); // Restart auto-rotation
+            });
+        });
+
+        // Optional: Pause on hover
+        carousel.addEventListener('mouseenter', stopAutoRotate);
+        carousel.addEventListener('mouseleave', startAutoRotate);
+
+        // Handle touch/swipe for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        carousel.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        carousel.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+
+        function handleSwipe() {
+            if (touchEndX < touchStartX - 50) {
+                // Swipe left - next
+                stopAutoRotate();
+                nextTestimonialSet();
+                startAutoRotate();
+            }
+            if (touchEndX > touchStartX + 50) {
+                // Swipe right - previous
+                stopAutoRotate();
+                showTestimonialSet(currentTestimonialSet - 1);
+                startAutoRotate();
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                stopAutoRotate();
+                showTestimonialSet(currentTestimonialSet - 1);
+                startAutoRotate();
+            } else if (e.key === 'ArrowRight') {
+                stopAutoRotate();
+                nextTestimonialSet();
+                startAutoRotate();
+            }
+        });
+
+        // Ensure carousel is responsive
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                showTestimonialSet(currentTestimonialSet);
+            }, 250);
+        });
+    })();
+</script>

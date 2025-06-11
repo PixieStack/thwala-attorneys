@@ -1,0 +1,419 @@
+﻿@model thwala_attorneys.Models.AttorneyProfileViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Rachel Mikateko Ngobeni - Attorney Profile";
+}
+
+<!-- Hero Section -->
+<section class="relative bg-gradient-to-br from-gray-900 to-secondary py-20">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Rachel Mikateko Ngobeni</h1>
+            <p class="text-xl md:text-2xl text-accent mb-6">Senior Partner & Director</p>
+            <p class="text-lg opacity-90">Attorney and Conveyancer of the High Court of South Africa</p>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+                <!-- Sidebar -->
+                <div class="lg:col-span-1">
+                    <!-- Profile Card -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden sticky top-8">
+                        <img src="/assets/images/nkateko.jpg" alt="Rachel Mikateko Ngobeni"
+                             class="w-full h-50 object-cover">
+
+                        <div class="p-6">
+                            <!-- Contact Info -->
+                            <div class="space-y-4 mb-6">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-envelope text-primary"></i>
+                                    <a href="mailto:rachelmkateko@gmail.com" class="text-sm text-gray-600 hover:text-primary">
+                                        rachelmkateko@gmail.com
+                                    </a>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-phone text-primary"></i>
+                                    <a href="tel:+27658804715" class="text-sm text-gray-600 hover:text-primary">
+                                        065 880 4715
+                                    </a>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-map-marker-alt text-primary"></i>
+                                    <span class="text-sm text-gray-600">
+                                        872 Ingwenya Street, Mamelodi, Pretoria
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Experience Badge -->
+                            <div class="text-center py-4 border-t border-gray-200">
+                                <div class="text-3xl font-bold text-primary">8+</div>
+                                <div class="text-sm text-gray-600">Years of Experience</div>
+                            </div>
+
+                            <!-- Languages -->
+                            <div class="mt-6">
+                                <h3 class="font-semibold text-secondary mb-3">Languages</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-gray-100 text-xs rounded-full">English</span>
+                                    <span class="px-3 py-1 bg-gray-100 text-xs rounded-full">Sesotho</span>
+                                    <span class="px-3 py-1 bg-gray-100 text-xs rounded-full">Xitsonga</span>
+                                    <span class="px-3 py-1 bg-gray-100 text-xs rounded-full">isiZulu</span>
+                                    <span class="px-3 py-1 bg-gray-100 text-xs rounded-full">Sepedi</span>
+                                    <span class="px-3 py-1 bg-gray-100 text-xs rounded-full">Tshivenda</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content Area -->
+                <div class="lg:col-span-2 space-y-8">
+
+                    <!-- Professional Summary -->
+                    <div class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-secondary mb-6 flex items-center">
+                            <i class="fas fa-user-tie text-primary mr-3"></i>
+                            Professional Profile
+                        </h2>
+                        <div class="prose text-gray-700 space-y-4">
+                            <p>
+                                A highly driven and dedicated Attorney and Conveyancer of the High Court of South Africa, with extensive
+                                experience in litigation, conveyancing, property law, and general legal practice. I possess a solid background
+                                in statutory interpretation, legal drafting, and client consultation, having worked across various legal
+                                environments, from private practice to government departments.
+                            </p>
+                            <p>
+                                Known for my attention to detail, ability to lead teams, and commitment to legal compliance, I strive to
+                                create impactful solutions for clients while ensuring accuracy and adherence to the law. With a strong
+                                foundation in both legal theory and practical application, I aim to bring my skills and knowledge to new
+                                opportunities that foster professional growth and contribute to the legal community.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Areas of Practice -->
+                    <div class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-secondary mb-6 flex items-center">
+                            <i class="fas fa-balance-scale text-primary mr-3"></i>
+                            Areas of Practice
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-gavel text-primary mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">General Litigation</h3>
+                                        <p class="text-sm text-gray-600 mt-1">Comprehensive litigation services</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-user-shield text-primary mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Criminal Law</h3>
+                                        <p class="text-sm text-gray-600 mt-1">Defense and prosecution matters</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-car-crash text-primary mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Personal Injury (RAF)</h3>
+                                        <p class="text-sm text-gray-600 mt-1">Road Accident Fund claims</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-home text-primary mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Conveyancing & Property Law</h3>
+                                        <p class="text-sm text-gray-600 mt-1">Property transfers and registrations</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-users text-primary mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Family Law</h3>
+                                        <p class="text-sm text-gray-600 mt-1">Divorce, custody, and maintenance</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 border border-gray-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-file-contract text-primary mt-1"></i>
+                                    <div>
+                                        <h3 class="font-semibold text-secondary">Contract Law</h3>
+                                        <p class="text-sm text-gray-600 mt-1">Drafting and dispute resolution</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Competencies -->
+                    <div class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-secondary mb-6 flex items-center">
+                            <i class="fas fa-certificate text-primary mr-3"></i>
+                            Key Competencies
+                        </h2>
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="font-semibold text-secondary mb-3">Legal Expertise & Practice</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Admitted Attorney and Conveyancer of the High Court of South Africa</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Experienced in General Litigation, Criminal Law, Family Law, Contract Law</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Administrative and Constitutional Law expertise</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-secondary mb-3">Deeds & Property Registration</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Examining, endorsing, and registering deeds</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Interpreting township and sectional title files</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Ensuring compliance with Deeds Registries Act</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-secondary mb-3">Leadership & Training</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Led day-to-day training and supervision of Junior Examiners</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Delegated tasks and monitored performance</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                        <span>Mentoring and community outreach</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professional Experience -->
+                    <div class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-secondary mb-6 flex items-center">
+                            <i class="fas fa-briefcase text-primary mr-3"></i>
+                            Professional Experience
+                        </h2>
+                        <div class="space-y-6">
+                            <!-- Current Position -->
+                            <div class="border-l-4 border-primary pl-6">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-lg font-semibold text-secondary">Director</h3>
+                                    <span class="text-sm text-gray-500">Feb 2025 - Present</span>
+                                </div>
+                                <p class="text-primary font-medium mb-2">Ngobeni Rachel Mikateko Attorneys Inc.</p>
+                                <p class="text-sm text-gray-600 mb-3">Pretoria, South Africa</p>
+                                <div class="text-sm text-gray-700">
+                                    <p class="font-medium mb-2">Areas of Practice:</p>
+                                    <ul class="grid grid-cols-2 gap-2">
+                                        <li>• General Litigation</li>
+                                        <li>• Criminal Law</li>
+                                        <li>• Personal Injury Matters</li>
+                                        <li>• Conveyancing & Property Law</li>
+                                        <li>• Contracts</li>
+                                        <li>• Family Law</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Senior Examiner -->
+                            <div class="border-l-4 border-gray-300 pl-6">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-lg font-semibold text-secondary">Senior Examiner</h3>
+                                    <span class="text-sm text-gray-500">Nov 2022 - Feb 2025</span>
+                                </div>
+                                <p class="text-primary font-medium mb-2">Department of Agriculture, Rural Development & Land Reform</p>
+                                <p class="text-sm text-gray-600 mb-3">Pretoria Deeds Office, South Africa</p>
+                                <div class="text-sm text-gray-700">
+                                    <p class="font-medium mb-2">Key Responsibilities:</p>
+                                    <ul class="space-y-1">
+                                        <li>• Examine deeds and documents for registration</li>
+                                        <li>• Interpret statutes and provide legal advice to conveyancers</li>
+                                        <li>• Train and mentor subordinates</li>
+                                        <li>• Update legal acts, manuals, and circulars</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Junior Examiner -->
+                            <div class="border-l-4 border-gray-300 pl-6">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-lg font-semibold text-secondary">Junior Examiner</h3>
+                                    <span class="text-sm text-gray-500">Jun 2018 - Oct 2022</span>
+                                </div>
+                                <p class="text-primary font-medium mb-2">Department of Agriculture, Rural Development & Land Reform</p>
+                                <p class="text-sm text-gray-600 mb-3">Johannesburg Deeds Office, South Africa</p>
+                                <div class="text-sm text-gray-700">
+                                    <p class="font-medium mb-2">Key Responsibilities:</p>
+                                    <ul class="space-y-1">
+                                        <li>• Interpret statutes and legal frameworks</li>
+                                        <li>• Verify registration data against documentation</li>
+                                        <li>• Check the accuracy of deed drafting</li>
+                                        <li>• Attend to rectification of office errors</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Candidate Attorney -->
+                            <div class="border-l-4 border-gray-300 pl-6">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-lg font-semibold text-secondary">Candidate Attorney</h3>
+                                    <span class="text-sm text-gray-500">Feb 2017 - Mar 2018</span>
+                                </div>
+                                <p class="text-primary font-medium mb-2">Moeketsi Attorneys & Conveyancers</p>
+                                <p class="text-sm text-gray-600 mb-3">Pretoria, South Africa</p>
+                                <div class="text-sm text-gray-700">
+                                    <p class="font-medium mb-2">Key Responsibilities:</p>
+                                    <ul class="space-y-1">
+                                        <li>• Conduct client consultations and provide legal advice</li>
+                                        <li>• Draft legal documents and perform legal research</li>
+                                        <li>• Prepare assessment reports for RAF matters</li>
+                                        <li>• Appear in Magistrate's Court</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-secondary mb-6 flex items-center">
+                            <i class="fas fa-graduation-cap text-primary mr-3"></i>
+                            Education
+                        </h2>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-certificate text-primary"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-semibold text-secondary">Practical Legal Training</h3>
+                                    <p class="text-gray-600">Legal Education and Development</p>
+                                    <p class="text-sm text-gray-500">January 2014 - June 2014 | Pretoria, South Africa</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-university text-primary"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-semibold text-secondary">Bachelor of Laws (LLB)</h3>
+                                    <p class="text-gray-600">University of Limpopo</p>
+                                    <p class="text-sm text-gray-500">January 2010 - December 2013 | Polokwane, South Africa</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-school text-primary"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-semibold text-secondary">NSC: Grade 12</h3>
+                                    <p class="text-gray-600">Solomon Mahlangu Secondary School</p>
+                                    <p class="text-sm text-gray-500">January 2004 - December 2008 | Pretoria, South Africa</p>
+                                    <p class="text-sm text-accent font-medium mt-1">Passed with Admission to Bachelor's Degree</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interests -->
+                    <div class="bg-white rounded-xl shadow-md p-8">
+                        <h2 class="text-2xl font-bold text-secondary mb-6 flex items-center">
+                            <i class="fas fa-heart text-primary mr-3"></i>
+                            Personal Interests
+                        </h2>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="text-center p-4 rounded-lg bg-gray-50 hover:bg-primary/5 transition-colors">
+                                <i class="fas fa-hands-helping text-3xl text-primary mb-2"></i>
+                                <p class="text-sm text-gray-700">Legal Research & Community Empowerment</p>
+                            </div>
+                            <div class="text-center p-4 rounded-lg bg-gray-50 hover:bg-primary/5 transition-colors">
+                                <i class="fas fa-utensils text-3xl text-primary mb-2"></i>
+                                <p class="text-sm text-gray-700">Cooking and Trying New Recipes</p>
+                            </div>
+                            <div class="text-center p-4 rounded-lg bg-gray-50 hover:bg-primary/5 transition-colors">
+                                <i class="fas fa-book-reader text-3xl text-primary mb-2"></i>
+                                <p class="text-sm text-gray-700">Reading and Personal Development</p>
+                            </div>
+                            <div class="text-center p-4 rounded-lg bg-gray-50 hover:bg-primary/5 transition-colors">
+                                <i class="fas fa-heartbeat text-3xl text-primary mb-2"></i>
+                                <p class="text-sm text-gray-700">Health & Wellness Activities</p>
+                            </div>
+                            <div class="text-center p-4 rounded-lg bg-gray-50 hover:bg-primary/5 transition-colors">
+                                <i class="fas fa-globe-africa text-3xl text-primary mb-2"></i>
+                                <p class="text-sm text-gray-700">Travel and Cultural Exploration</p>
+                            </div>
+                            <div class="text-center p-4 rounded-lg bg-gray-50 hover:bg-primary/5 transition-colors">
+                                <i class="fas fa-chalkboard-teacher text-3xl text-primary mb-2"></i>
+                                <p class="text-sm text-gray-700">Educational Seminars & Events</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="bg-secondary py-16">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center text-white">
+            <h2 class="text-3xl font-bold mb-4">Ready to Discuss Your Legal Needs?</h2>
+            <p class="text-lg mb-8 opacity-90">
+                With years of experience and a commitment to excellence, I'm here to provide the legal support you need.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a asp-controller="Consultation" asp-action="Index" class="bg-accent text-secondary px-8 py-3 rounded-lg font-medium hover:bg-accent/90 transition-colors">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Back to Team Link -->
+<div class="bg-gray-100 py-8">
+    <div class="container mx-auto px-4 text-center">
+        <a asp-controller="Home" asp-action="Index" asp-fragment="team" class="inline-flex items-center text-primary hover:text-primary-dark font-medium">
+            <i class="fas fa-arrow-left mr-2"></i>
+            Back to Our Team
+        </a>
+    </div>
+</div>

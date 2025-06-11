@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thwala Attorneys | Justice & Excellence</title>
+    <meta name="description" content="Thwala Attorneys - Premier legal services in Criminal Law, Civil Litigation, Labour Law, and more. Professional legal representation you can trust.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/logo/logo.png" type="image/png">
+
+    <!-- Bootstrap (keeping it for compatibility with existing scripts) -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/thwala_attorneys.styles.css" asp-append-version="true" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#8B0000',
+                            dark: '#6B0000',
+                            light: '#A80000'
+                        },
+                        secondary: {
+                            DEFAULT: '#1A3350',
+                            light: '#2A4360'
+                        },
+                        accent: {
+                            DEFAULT: '#D4AF37',
+                            light: '#E4BF47'
+                        }
+                    },
+                    fontFamily: {
+                        'playfair': ['"Playfair Display"', 'serif'],
+                        'roboto': ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hero-gradient {
+            background: linear-gradient(rgba(26, 51, 80, 0.85), rgba(26, 51, 80, 0.85));
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="font-roboto text-gray-800 antialiased">
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a asp-controller="Home" asp-action="Index" class="flex items-center gap-3">
+                        <img src="/assets/logo/logo.png" alt="Thwala Attorneys" class="h-20 md:h-22 w-auto">
+                        <span class="text-2xl md:text-3xl font-bold font-playfair text-secondary">
+                            <span class="text-primary">Thwala</span> Attorneys
+                        </span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-secondary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a asp-controller="Home" asp-action="Index" class="text-secondary hover:text-primary font-medium py-2 border-b border-gray-100">Home</a>
+                    <a asp-controller="Home" asp-action="Index" asp-fragment="about" class="text-secondary hover:text-primary font-medium transition-colors duration-300">About Us</a>
+                    <a asp-controller="Home" asp-action="Index" asp-fragment="services" class="text-secondary hover:text-primary font-medium transition-colors duration-300">Services</a>
+                    <a asp-controller="Home" asp-action="Index" asp-fragment="team" class="text-secondary hover:text-primary font-medium transition-colors duration-300">Our Team</a>
+                    <a asp-controller="ContactUs" asp-action="Index" class="text-secondary hover:text-primary font-medium transition-colors duration-300">Contact Us</a>
+                    <a asp-controller="Consultation" asp-action="Index" class="bg-primary hover:bg-primary-dark text-white px-5 py-2 rounded shadow-md transition-colors duration-300">Schedule a Consultation</a>
+                </nav>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="md:hidden hidden bg-white pb-4">
+                <nav class="flex flex-col space-y-3">
+                    <a asp-controller="Home" asp-action="Index" class="text-secondary hover:text-primary font-medium py-2 border-b border-gray-100">Home</a>
+                    <a asp-controller="Home" asp-action="Index" asp-fragment="about" class="text-secondary hover:text-primary font-medium py-2 border-b border-gray-100">About Us</a>
+                    <a asp-controller="Home" asp-action="Index" asp-fragment="services" class="text-secondary hover:text-primary font-medium py-2 border-b border-gray-100">Services</a>
+                    <a asp-controller="Home" asp-action="Index" asp-fragment="team" class="text-secondary hover:text-primary font-medium py-2 border-b border-gray-100">Our Team</a>
+                    <a asp-controller="ContactUs" asp-action="Index" class="text-secondary hover:text-primary font-medium py-2 border-b border-gray-100">Contact Us</a>
+                    <a asp-controller="Consultation" asp-action="Index" class="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded shadow-md inline-block mt-2">Schedule a Consultation</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid px-0">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white">
+        <!-- Main Footer -->
+        <div class="container mx-auto px-4 md:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Column 1: About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white font-playfair">Thwala Attorneys</h3>
+                    <p class="text-white/70 mb-6">
+                        A premier full-service law firm dedicated to providing exceptional legal representation across South Africa with integrity and excellence.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/10 transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Services -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white font-playfair">Our Services</h3>
+                    <ul class="space-y-3 text-white/70">
+                        <li><a asp-controller="Services" asp-action="CriminalLaw" class="hover:text-white transition-colors duration-300">Criminal Law</a></li>
+                        <li><a asp-controller="Services" asp-action="CivilLitigation" class="hover:text-white transition-colors duration-300">Civil Litigation</a></li>
+                        <li><a asp-controller="Services" asp-action="LabourEmploymentLaw" class="hover:text-white transition-colors duration-300">Labour & Employment Law</a></li>
+                        <li><a asp-controller="Services" asp-action="CorporateCommercialLaw" class="hover:text-white transition-colors duration-300">Corporate & Commercial Law</a></li>
+                        <li><a asp-controller="Services" asp-action="PropertyLawConveyancing" class="hover:text-white transition-colors duration-300">Property Law & Conveyancing</a></li>
+                        <li><a asp-controller="Services" asp-action="FamilyMatrimonialLaw" class="hover:text-white transition-colors duration-300">Family & Matrimonial Law</a></li>
+                        <li><a asp-controller="Services" asp-action="PersonalInjury" class="hover:text-white transition-colors duration-300">Personal Injury</a></li>
+                        <li><a asp-controller="Services" asp-action="AdministrationOfEstates" class="hover:text-white transition-colors duration-300">Administration Of Estates</a></li>
+                        <li><a asp-controller="Services" asp-action="ConstitutionalLitigation" class="hover:text-white transition-colors duration-300">Constitutional Litigation</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Column 3: Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white font-playfair">Quick Links</h3>
+                    <ul class="space-y-3 text-white/70">
+                        <li><a asp-controller="Home" asp-action="Index" asp-fragment="about" class="hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a asp-controller="Home" asp-action="Index" asp-fragment="team" class="hover:text-white transition-colors duration-300">Our Team</a></li>
+                        <li><a asp-controller="Home" asp-action="Index" asp-fragment="testimonials" class="hover:text-white transition-colors duration-300">Testimonials</a></li>
+                        <li><a asp-controller="Home" asp-action="Index" class="hover:text-white transition-colors duration-300">Call To Action</a></li>
+                        <li><a asp-controller="ContactUsController" asp-action="Index" asp-fragment="contact" class="hover:text-white transition-colors duration-300">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 text-white font-playfair">Contact Us</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-accent"></i>
+                            <span class="text-white/70">Suite No.4 Commerce & Industry Chambers,<br> 235 Meyer Street, Germiston, 1401<br>South Africa</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-accent"></i>
+                            <span class="text-white/70">(+27) 010-615-0136</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-accent"></i>
+                            <span class="text-white/70">thwalaattorneys@outlook.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock mt-1 mr-3 text-accent"></i>
+                            <span class="text-white/70">Mon-Fri: 8:00AM - 4:00PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-white/10 py-6">
+            <div class="container mx-auto px-4 md:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-white/60 text-sm text-center md:text-left">
+                        &copy; 2023 Thwala Attorneys. All rights reserved. &nbsp;&nbsp; | &nbsp;&nbsp;Website by <a href="https://github.com/PixieStack?tab=repositories" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-white transition-colors duration-300">PixieStack</a>
+                    </p>
+                    <div class="mt-4 md:mt-0">
+                        <ul class="flex flex-wrap justify-center md:justify-end gap-4 text-sm text-white/60">
+                            <li><a asp-comtroller="Home" asp-action="Privacy"class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                            <li><a asp-comtroller="Home" asp-action="TermsOfService" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                            <li><a asp-comtroller="Home" asp-action="LegalDisclaimer" class="hover:text-white transition-colors duration-300">Legal Disclaimer</a></li>
+                        </ul>
+                    </div>
+                </div>&nbsp;
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-primary hover:bg-primary-dark text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <!-- In the head section of your _Layout.cshtml -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        // Mobile Menu Toggle - Fixed with null checks
+        const menuToggle = document.getElementById('menu-toggle');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', function() {
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu) {
+                    mobileMenu.classList.toggle('hidden');
+                }
+            });
+        }
+
+        // Smooth scrolling for anchor links - Fixed with null checks
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+
+                    // Close mobile menu after selection
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Back to Top Button - Fixed with null checks
+        const backToTopButton = document.getElementById('back-to-top');
+        if (backToTopButton) {
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.remove('opacity-0', 'invisible');
+                    backToTopButton.classList.add('opacity-100', 'visible');
+                } else {
+                    backToTopButton.classList.add('opacity-0', 'invisible');
+                    backToTopButton.classList.remove('opacity-100', 'visible');
+                }
+            });
+
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // FAQ Toggle - Fixed with null checks
+        function toggleFAQ(button) {
+            if (button) {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('i');
+
+                if (answer && icon) {
+                    answer.classList.toggle('hidden');
+                    icon.classList.toggle('rotate-180');
+                }
+            }
+        }
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
