@@ -1,6 +1,13 @@
 ﻿# Thwala Attorneys Web Application
 
+> **Deployment and Production Plans**
+>
+> This web application is being prepared for deployment using [Render](https://render.com/). I am currently awaiting funding from Thwala Attorneys to purchase a company domain name, as well as to pay for hosting and related services. Once these are in place, the application's email notifications will be updated to use the official company address associated with the new domain.
+>
+> **Note:** Until these services are set up, development and testing use personal or temporary configurations. Future updates will include configuration changes for the company email and finalized production settings.
+
 -----
+
 
 ## Overview
 
