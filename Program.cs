@@ -131,7 +131,7 @@ namespace thwala_attorneys
         }
     }
 
-    // Add this class to verify email configuration on startup
+    // Class to verify email configuration on startup == THIS WILL BE REMOVED ONCE READY FOR DEPLOYMENT
     public class EmailConfigVerifier : IHostedService
     {
         private readonly IServiceProvider _serviceProvider;
@@ -162,11 +162,9 @@ namespace thwala_attorneys
                 }
 
                 // Test email connection without actually sending an email
-                await Task.Delay(5000, cancellationToken); // Wait for app to initialize
-
+                await Task.Delay(5000, cancellationToken); 
                 try
                 {
-                    // Send a test email to verify configuration
                     await emailService.SendEmailAsync(
                         configuration["EmailSettings:LawyerEmail"] ?? configuration["EmailSettings:SmtpUsername"],
                         "Email Service Test - Application Startup",
