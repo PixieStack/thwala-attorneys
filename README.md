@@ -28,6 +28,58 @@ Key features include:
 
 -----
 
+## 🖼️ Application Screenshots
+
+Below are screenshots demonstrating the core user experience and features.  
+*Images are located in `wwwroot/assets/site images/`.*
+
+<table>
+  <tr>
+    <td align="center"><b>Landing Page</b></td>
+    <td align="center"><b>Footer</b></td>
+    <td align="center"><b>Contact Us</b></td>
+  </tr>
+  <tr>
+    <td><img src="wwwroot/assets/site%20images/LANDING%20PAGE.png" alt="Landing Page" width="220"/></td>
+    <td><img src="wwwroot/assets/site%20images/FOOTER.png" alt="Footer" width="220"/></td>
+    <td><img src="wwwroot/assets/site%20images/CONTACT%20US.png" alt="Contact Us" width="220"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Schedule</b></td>
+    <td align="center"><b>Services</b></td>
+    <td align="center"><b>Team</b></td>
+  </tr>
+  <tr>
+    <td><img src="wwwroot/assets/site%20images/SCHEDULE.png" alt="Schedule" width="220"/></td>
+    <td><img src="wwwroot/assets/site%20images/SERVICES.png" alt="Services" width="220"/></td>
+    <td><img src="wwwroot/assets/site%20images/TEAM.png" alt="Team" width="220"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Testimonials</b></td>
+    <td align="center"><b>Why & About</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="wwwroot/assets/site%20images/TESTIMONIALS.png" alt="Testimonials" width="220"/></td>
+    <td><img src="wwwroot/assets/site%20images/WHY%20AND%20ABOUT.png" alt="Why and About" width="220"/></td>
+    <td></td>
+  </tr>
+</table>
+
+### Image Descriptions
+- **Landing Page:** Modern introductory splash page for the app.
+- **Footer:** Application footer with navigation and additional information.
+- **Contact Us:** User-friendly contact form for client inquiries.
+- **Schedule:** Calendar or appointment scheduling interface.
+- **Services:** Overview of the legal services offered.
+- **Team:** Information about the attorneys and staff.
+- **Testimonials:** Client reviews and success stories.
+- **Why & About:** Firm's background, mission, and values.
+
+*For the full and most up-to-date set of images, [browse the assets directory](https://github.com/PixieStack/thwala-attorneys/tree/master/wwwroot/assets/site%20images) on GitHub.*
+
+-----
+
 ## 🛠️ Technologies Used
 
   * **.NET 8.0 (ASP.NET Core)**: The core framework for a high-performance foundation.
@@ -35,7 +87,7 @@ Key features include:
   * **Microsoft SQL Server 2022 (Docker container)**: The relational database management system deployed efficiently via Docker.
   * **Docker & Docker Compose**: Tools for consistent containerization and orchestration.
   * **SMTP Email (Gmail SMTP configured)**: For direct email sending and notifications.
-  * **C\#**: The primary programming language for backend logic.
+  * **C#**: The primary programming language for backend logic.
   * **HTML, CSS, JavaScript (Razor Views)**: For building dynamic and responsive user interfaces.
 
 -----
